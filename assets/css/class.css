@@ -1,0 +1,109 @@
+.flex {
+    display: flex;
+}
+
+.f-col {
+    flex-direction: column;
+}
+
+.j-center {
+    justify-content: center;
+}
+
+.j-sb {
+    justify-content: space-between;
+}
+
+.j-start {
+    justify-content: flex-start;
+}
+
+.j-end {
+    justify-content: flex-end;
+}
+
+.al-center {
+    align-items: center;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-center {
+    display: grid;
+    place-content: center;
+}
+
+.p-0-15 {
+    padding: 0 15px;
+}
+
+.p-15-0 {
+    padding: 15px 0;
+}
+
+.p-100-0 {
+    padding: 100px 0;
+}
+
+.p-15 {
+    padding: 15px;
+}
+
+.mb20 {
+    margin-bottom: 20px;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+.lowercase {
+    text-transform: lowercase;
+}
+
+.primary_color {
+    color: var(--primary-color);
+}
+
+.text_color {
+    color: var(--text-color);
+}
+
+.w-full {
+    width: 100%;
+}
+
+.relative {
+    position: relative;
+}
+
+.y-center {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.pl100 {
+    padding-left: 100px;
+}
+
+@media screen and (max-width: 1200px) {
+    .pl15-lg {
+        padding-left: 15px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .center-md {
+        display: flex;
+        justify-content: center;
+
+    }
+}
