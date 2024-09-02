@@ -85,9 +85,19 @@
     position: relative;
 }
 
+.x-center {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 .y-center {
     top: 50%;
     transform: translateY(-50%);
+}
+
+.text-center {
+    text-align: center;
+    width: 100%;
 }
 
 .pl100 {
@@ -106,4 +116,12 @@
         justify-content: center;
 
     }
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
 }

@@ -1,0 +1,87 @@
+/* Home slider */
+.slick-slide {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.pxl-slider {
+    position: relative;
+}
+
+.pxl-slider .pxl-slick-custom-nav {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.slick-active {
+    opacity: 1;
+}
+
+.slick-dots {
+    display: none;
+}
+
+.slick-custom-nav {
+    position: absolute;
+}
+
+.pxl-slick-custom-nav {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.pxl-slick-nav-item {
+    display: inline-block;
+    margin: 0 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.pxl-slick-nav-item.active {
+    color: red;
+}
+
+.pxl-item {
+    position: relative;
+}
+
+.pxl-item .pxl-overlay {
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 0;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.pxl-slider-content-inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 40%;
+}
+
+
+.pxl-slider-content-inner h4 {
+    font-weight: 600;
+    margin: 0 0 15px 0;
+    color: var(--primary-color);
+    font-size: 40px;
+}
+
+.pxl-slider-content-inner h2 {
+    font-weight: 400;
+    margin: 0 0 15px 0;
+    color: var(--primary-color);
+    font-size: 80px;
+}
+
+.pxl-slider-content-inner p {
+    margin-bottom: 40px;
+    font-size: 18px;
+}

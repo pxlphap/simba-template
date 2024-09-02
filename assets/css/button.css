@@ -1,0 +1,21 @@
+.btn {
+    color: var(--primary-color);
+    background-color: #fff;
+    border: 2px solid var(--primary-color);
+    padding: 10px 30px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    border-color: var(--link-color-hover);
+    color: var(--primary-color);
+}
+
+.btn-tab {
+    margin: 0 3px;
+    background-color: transparent;
+}
+
+.btn-tab.active {
+    background-color: #fff;
+}

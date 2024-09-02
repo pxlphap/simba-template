@@ -1,0 +1,13 @@
+@keyframes pulse-border {
+    0% {
+        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+        opacity: 1;
+        transition: all .4s linear;
+    }
+
+    100% {
+        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.6);
+        opacity: 0;
+        transition: all .4s linear;
+    }
+}
