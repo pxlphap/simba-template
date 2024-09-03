@@ -1024,6 +1024,243 @@ textarea {
     padding: 100px 0;
 }
 
+.section-7 .pxl-mainTitle {
+    margin-bottom: 50px;
+}
+
+.section-7 .pxl-subTitle {
+    margin-bottom: 10px;
+}
+
+.pxl-wrap-blog {
+    display: flex;
+    margin: 0 5%;
+    gap: 30px;
+}
+
+.pxl-wrap-blog .pxl-blog-item {
+    margin-bottom: 30px;
+}
+
+.pxl-wrap-blog .pxl-blog-content {
+    padding: 30px 30px 40px;
+    background-color: #fff;
+}
+
+.pxl-wrap-blog .pxl-blog-content .pxl-blog-meta {
+    display: flex;
+    align-items: center;
+}
+
+.pxl-wrap-blog .pxl-blog-content .pxl-blog-meta p+p {
+    padding-left: 15px;
+    margin-left: 15px;
+    position: relative;
+}
+
+.pxl-wrap-blog .pxl-blog-content .pxl-blog-meta p+p:before {
+    content: "";
+    width: 1px;
+    position: absolute;
+    left: 0;
+    top: 5px;
+    bottom: 5px;
+    background-color: var(--text-color);
+
+}
+
+.pxl-wrap-blog .pxl-blog-content .pxl-blog-meta p img {
+    width: 18px;
+    fill: var(--primary-color)
+}
+
+.pxl-wrap-blog .pxl-blog-content h5 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.pxl-wrap-blog .pxl-blog-description {
+    margin-bottom: 30px;
+}
+
+/* Section 8 */
+.pxl-section.section-8 {
+    padding: 100px 0;
+    background-color: #fff;
+}
+
+.pxl-wrap-client {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: initial;
+    align-items: center;
+    margin: 0 5%;
+    gap: 30px;
+    width: 100%;
+}
+
+.pxl-wrap-client img {
+    padding: 0 15px;
+    min-width: 116px;
+    place-content: center;
+}
+
+/* Section About */
+/* Section About 1 */
+.pxl-section.section-about-1 {
+    padding: 100px 0;
+}
+
+.pxl-list-with-image-section {
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    display: grid;
+}
+
+.pxl-list-with-image-section .pxl-description {
+    margin-bottom: 15px;
+}
+
+.pxl-list-with-image-section ul li svg {
+    margin-right: 10px;
+}
+
+/* Section About 2 */
+.pxl-section.section-about-2 {
+    padding: 100px 0;
+    background-color: #fff;
+}
+
+.pxl-wrapCollection {
+    width: 100%;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.pxl-wrapCollection .pxl-overlay-style {
+    position: relative;
+    overflow: hidden;
+}
+
+.pxl-wrapCollection .pxl-overlay-style .pxl-overlay-image img {
+    transform: scale(1);
+    transition: all 0.3s linear;
+}
+
+.pxl-wrapCollection .pxl-overlay-style:hover .pxl-overlay-image img {
+    transform: scale(1.1);
+}
+
+.pxl-wrapCollection .pxl-overlay-style .pxl-overlay-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.pxl-wrapCollection .pxl-overlay-style .pxl-overlay-content:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--primary-color);
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.pxl-wrapCollection .pxl-overlay-style .pxl-overlay-content .pxl-overlay-inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.1);
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s linear;
+}
+
+.pxl-wrapCollection .pxl-overlay-style .pxl-overlay-content .pxl-overlay-inner .pxl-main-title {
+    color: #fff;
+    padding-bottom: 20px;
+    position: relative;
+    text-transform: inherit;
+    margin-bottom: 20px;
+}
+
+.pxl-wrapCollection .pxl-overlay-style .pxl-overlay-content .pxl-overlay-inner .pxl-main-title:before {
+    content: "";
+    width: 40px;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.pxl-wrapCollection .pxl-overlay-style .pxl-overlay-content .pxl-overlay-inner .pxl-description {
+    color: #fff;
+}
+
+.pxl-wrapCollection .pxl-overlay-style:hover .pxl-overlay-content:before {
+    opacity: 0.8;
+}
+
+.pxl-wrapCollection .pxl-overlay-style:hover .pxl-overlay-content .pxl-overlay-inner {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Section About 3 */
+.pxl-section.section-about-3 {
+    padding: 0;
+}
+
+.pxl-wrap-section-about3 {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    background-repeat: repeat;
+    background-size: cover;
+    background-image: url(../images/about/ab-bg-new.webp);
+    background-position: center;
+    background-attachment: scroll;
+
+}
+
+.pxl-custom-info-box .pxl-column {
+    padding: 0 60px;
+}
+
+.pxl-custom-info-box .pxl-column .pxl-custom-info-content {
+    padding: 0 15px;
+}
+
+.pxl-custom-info-box .pxl-custom-info-title {
+    display: flex;
+}
+
+.pxl-custom-info-box .pxl-custom-info-title h2+h2 {
+    margin-left: 15px;
+}
+
+.pxl-custom-info-box .pxl-column {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    align-items: center;
+}
+
+.pxl-custom-info-box .pxl-column .pxl-info-button {
+    text-align: right;
+}
+
 /* Section contact info */
 
 .section-contact-info {
