@@ -49,6 +49,7 @@ h6 {
     font-weight: normal;
     font-family: 'Advent Pro', sans-serif;
     line-height: 1.2;
+    letter-spacing: 2px;
 }
 
 h1 {
@@ -1259,6 +1260,131 @@ textarea {
 
 .pxl-custom-info-box .pxl-column .pxl-info-button {
     text-align: right;
+}
+
+/* Section About 4 */
+.pxl-section.section-about-4 {
+    padding: 100px 0;
+}
+
+.pxl-group-image-text {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.pxl-icon-block {
+    margin-top: 40px;
+}
+
+/* Section About 5 */
+.pxl-section.section-about-5 {
+    padding: 0 0 100px;
+}
+
+.pxl-group-team {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.pxl-wrap-img {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.pxl-wrap-img:before {
+    content: "";
+    background-color: var(--primary-color);
+    right: 0;
+    top: 0;
+    height: 100%;
+    transition: all 0.3s linear;
+    position: absolute;
+    opacity: 0.5;
+    width: 0%;
+}
+
+.pxl-wrap-img::after {
+    content: "";
+    background-color: var(--primary-color);
+    left: 0;
+    top: 0;
+    height: 100%;
+    transition: all 0.3s linear;
+    position: absolute;
+    opacity: 0.5;
+    width: 0%;
+}
+
+.pxl-group-team .pxl-team-item:hover .pxl-wrap-img:before {
+    width: 50%;
+}
+
+.pxl-group-team .pxl-team-item:hover .pxl-wrap-img::after {
+    width: 50%;
+}
+
+.pxl-wrap-img .pxl-wrap-social {
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    bottom: 25px;
+    left: 50%;
+    transform: translate(-50%, 15px);
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s linear;
+}
+
+.pxl-group-team .pxl-team-item:hover .pxl-wrap-social {
+    transform: translate(-50%, 0px);
+    opacity: 1;
+    visibility: visible;
+}
+
+.pxl-wrap-img .pxl-wrap-social li {
+    width: 40px;
+    height: 40px;
+}
+
+.pxl-wrap-img .pxl-wrap-social a {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.pxl-wrap-img .pxl-wrap-social a:hover {
+    background-color: var(--link-color-hover);
+}
+
+.pxl-wrap-img .pxl-wrap-social svg {
+    width: 16px;
+    height: 16px;
+}
+
+.pxl-wrap-team-meta {
+    text-align: center;
+}
+
+.pxl-wrap-team-meta .pxl-memberName {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.pxl-wrap-team-meta .pxl-memberPosition {
+    font-size: 20px;
+    font-weight: regular;
 }
 
 /* Section contact info */

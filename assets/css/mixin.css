@@ -11,3 +11,13 @@
         transition: all .4s linear;
     }
 }
+
+@keyframes progress-horizontal {
+    0% {
+        transform: scaleX(0);
+    }
+
+    100% {
+        transform: scaleX(1);
+    }
+}
