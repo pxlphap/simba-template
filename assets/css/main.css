@@ -1119,6 +1119,10 @@ textarea {
     display: grid;
 }
 
+.pxl-list-with-image-section>div {
+    padding: 0 15px;
+}
+
 .pxl-list-with-image-section .pxl-description {
     margin-bottom: 15px;
 }
