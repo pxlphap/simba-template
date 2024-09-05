@@ -1441,12 +1441,137 @@ form.contact-form {
     gap: 30px;
 }
 
-form.contact-form textarea#ContactFormMessage {
-    grid-column: 1 / 4;
+form#contact_form_default {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+form.contact-form textarea#ContactFormMessage,
+form#contact_form_default textarea#ContactFormMessage {
+    grid-column: 1 / 3;
 }
 
 form.contact-form button {
     grid-column: 2 / 3;
     margin: 0;
     font-size: 16px;
+}
+
+form#contact_form_default button {
+    max-width: fit-content;
+}
+
+.pxl-section-contact-us {
+    padding: 100px 0;
+}
+
+.pxl-list-contact-info {
+    padding: 60px;
+    background-color: #C97F5F;
+    border-radius: 10px;
+    margin-right: -100px;
+    z-index: 2;
+    min-width: 500px;
+    margin: 40px -50px 40px 0;
+}
+
+.pxl-list-contact-info .pxl-list-item+.pxl-list-item {
+    margin-top: 40px;
+}
+
+.pxl-list-contact-info .pxl-list-item h6 {
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.pxl-list-contact-info .pxl-list-item .flex>svg {
+    width: 35px;
+    height: 35px;
+    color: #fff;
+}
+
+.pxl-list-contact-info .pxl-list-item .wrap-content {
+    padding-left: 20px;
+    color: #fff;
+}
+
+.email .wrap-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.pxl-list-item .flex li+li {
+    margin-left: 10px;
+}
+
+.pxl-list-item .flex li a {
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+    color: #C97F5F;
+}
+
+.pxl-wrap-contact-form {
+    background-color: #fff;
+    padding: 60px 60px 60px 90px;
+    box-shadow: 0 1px 72px 0 rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+}
+
+.pxl-title-form {
+    margin-bottom: 30px;
+    font-weight: 700;
+    color: #000;
+}
+
+.contact-form-default {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 cột cho các input */
+    gap: 20px;
+}
+
+.contact-form-default .form-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.contact-form-default label {
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    background-color: white;
+    padding: 0 5px;
+    font-size: 14px;
+    color: gray;
+}
+
+.contact-form-default input,
+.contact-form-default textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.contact-form-default .textarea {
+    grid-column: 1 / 3;
+}
+
+.contact-form-default input:focus+label,
+.contact-form-default textarea:focus+label {
+    color: blue;
+    /* Đổi màu label khi input/textarea được chọn */
+}
+
+.contact-form-default button {
+    grid-column: span 2;
+    /* Button chiếm 2 cột */
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
 }
