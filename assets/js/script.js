@@ -6,7 +6,21 @@
         // Sticky menu
         var header = $(".pxl-header-sticky");
         var sticky = header.offset().top;
+        $(document).on('click', '.pxl-icon-menu-mobile', function () {
+            $('.pxl-header-mobile').addClass('active');
+        });
 
+        $(document).on('click', '.pxl-item-has-child', function () {
+            $('.popup-child-menu').addClass('active');
+        });
+
+        $(document).on('click', '.prev-button', function () {
+            $('.popup-child-menu').removeClass('active');
+        });
+
+        $(document).on('click', '.close-button', function () {
+            $('.popup-child-menu, .pxl-header-mobile').removeClass('active');
+        });
         $(window).scroll(function () {
             if ($(window).scrollTop() > sticky) {
                 header.addClass("active").css('z-index', '1000');
@@ -84,5 +98,6 @@
         console.log($videoId);
         $('.pxl-content-popup').append('<div class="pxl-video-modal-content"><iframe src="https://www.youtube.com/embed/' + $videoId + '" allowfullscreen></iframe></div>');
     });
+
 
 })(jQuery);

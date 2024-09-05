@@ -62,6 +62,15 @@
     .pxl-group-image-text {
         grid-template-columns: repeat(1, 1fr);
     }
+
+    .pxl-list-contact-info {
+        padding: 40px;
+        margin-right: -30px;
+    }
+
+    .pxl-wrap-contact-form {
+        padding: 40px 40px 40px 60px;
+    }
 }
 
 @media screen and (max-width: 991px) {
@@ -101,6 +110,26 @@
     .pxl-group-team {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .pxl-wrap.flex {
+        flex-direction: column;
+    }
+
+    .pxl-list-contact-info {
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        gap: 30px;
+        margin-right: 0;
+    }
+
+    .pxl-list-contact-info .pxl-list-item+.pxl-list-item {
+        margin: 0;
+    }
+
+    .pxl-list-contact-info {
+        padding: 30px;
+        margin-right: -30px;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -110,6 +139,10 @@
     h2,
     h2 a {
         font-size: 30px !important;
+    }
+
+    .p-15-0 {
+        padding: 15px;
     }
 
     .pxl-slick-nav-item {
@@ -179,6 +212,30 @@
         grid-template-columns: repeat(1, 1fr);
     }
 
+    .pxl-list-contact-info {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+        margin-right: 0;
+        gap: 0;
+        min-width: 100%;
+    }
+
+    .pxl-list-contact-info .pxl-list-item+.pxl-list-item {
+        margin: 30px 0 0;
+    }
+
+    .pxl-list-contact-info .pxl-list-item h6 {
+        margin-bottom: 10px;
+    }
+
+    .socials h6 {
+        margin-bottom: 15px;
+    }
+
+    .pxl-wrap-contact-form {
+        padding: 30px;
+    }
 }
 
 @media screen and (max-width: 676px) {
@@ -277,6 +334,10 @@
 
     .pxl-section.section-6 .row {
         margin: 0;
+    }
+
+    .contact-form-default .form-group {
+        grid-column: 1 / 3;
     }
 }
 
