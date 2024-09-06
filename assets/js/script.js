@@ -32,13 +32,22 @@
         });
 
         $(document).on('click', '.pxl-form-quantity button', function () {
-            var $dataCartValue = $(this).parent().find('input').val();
+            event.preventDefault();
+            var $parent = $(this).parent();
+            var $dataCartValue = $parent.find('input').val();
+
             if ($(this).hasClass('reduce') && $dataCartValue > 0) {
-                $(this).parent().find('input').val($dataCartValue - 1);
+                $parent.find('input').val($dataCartValue - 1);
             } else {
-                $(this).parent().find('input').val(parseInt($dataCartValue) + 1);
+                $parent.find('input').val(parseInt($dataCartValue) + 1);
             }
+
+            $parent.find('input').each(function () {
+                var currentValue = $(this).val();
+                console.log('Current value:', currentValue);
+            });
         });
+
         $(window).scroll(function () {
             if ($(window).scrollTop() > sticky) {
                 header.addClass("active").css('z-index', '1000');
