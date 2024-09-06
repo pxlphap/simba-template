@@ -74,6 +74,8 @@
 
         // Product carousel
         var $productSlider = $('.pxl-product-carousel .slick-slider');
+        var $productSlider2 = $('.pxl-product-carousel .main-slider');
+        var $thumbSlider = $('.pxl-product-carousel .thumb-slider');
 
         $productSlider.slick({
             dots: false,
@@ -82,7 +84,29 @@
             fade: false,
             cssEase: 'linear',
             slidesToShow: 1,
-            slidesToScroll: 1, arrows: false
+            slidesToScroll: 1,
+            arrows: false
+        });
+
+        $productSlider2.slick({
+            dots: false,
+            infinite: true,
+            speed: 300,
+            fade: false,
+            cssEase: 'linear',
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            asNavFor: '.thumb-slider'
+        });
+
+        $thumbSlider.slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            asNavFor: '.main-slider',
+            dots: false,
+            centerMode: true,
+            focusOnSelect: true
         });
 
         $('.pxl-testimonial-carousel-wrapper.slick-slider').slick({
@@ -109,6 +133,26 @@
         $('.pxl-wrap-block-product').removeClass('active');
         $('.pxl-wrap-block-product[data-group="' + $idTab + '"]').addClass('active');
     });
+
+    // show popup
+    $(document).on('click', '#trigger-enquiry', function () {
+        $('.pxl-modal').removeClass('show-enquiry');
+        $('.pxl-modal').addClass('show-enquiry');
+    });
+    $(document).on('click', '.pxl-modal .close-button', function () {
+        $('.pxl-modal').removeClass('show-enquiry');
+    });
+
+    $('.section-viewport .quantity').append('<span class="quantity-icon"><i class="quantity-down">-</i><i class="quantity-up">+</i></span>');
+    $('.quantity-up').on('click', function () {
+        $(this).parents('.quantity').find('input[type="number"]').get(0).stepUp();
+        $(this).parents('.woocommerce-cart-form').find('.actions .button').removeAttr('disabled');
+    });
+    $('.quantity-down').on('click', function () {
+        $(this).parents('.quantity').find('input[type="number"]').get(0).stepDown();
+        $(this).parents('.woocommerce-cart-form').find('.actions .button').removeAttr('disabled');
+    });
+    $('.woocommerce-cart-form .actions .button').removeAttr('disabled');
 
     //Video
     $(document).on('click', '.pxl-video', function () {

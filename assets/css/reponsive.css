@@ -236,6 +236,14 @@
     .pxl-wrap-contact-form {
         padding: 30px;
     }
+
+    .section-tabs .pxl-group-tab .tabs {
+        flex-direction: column;
+    }
+
+    .pxl-section.section-tabs .container-fluid .row {
+        margin: 0;
+    }
 }
 
 @media screen and (max-width: 676px) {
