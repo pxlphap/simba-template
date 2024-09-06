@@ -1821,3 +1821,156 @@ form#contact_form_default button {
     border-radius: 10px;
     font-weight: 600;
 }
+/*login css*/
+.container-form {
+    max-width: 900px;
+    margin: 0 auto;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 15px;
+}
+.container-form .form-login {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 50px 35px;
+}
+.container-form .form-login input {
+    width: 100%;
+    height: 50px;
+    transition: 300ms;
+    border-radius: 7px;
+    border-color: #eaeaea;
+    margin-bottom: 15px;
+    padding-left: 20px;
+    font-size: 16px;
+    font-family: 'poppin',sans-serif;
+}
+.container-form .form-login input:focus ,.container-form .form-login input:active {
+    border-color: #C97F5F;
+}
+.field-dflex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+@media (max-width:450px){
+    .field-dflex {
+        display: block;
+    }
+    .field-rememberme {
+        width: 100%!important;
+    }
+}
+.field-rememberme{
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+.container-form button {
+    font-size: 20px;
+    background-color: #C97F5F;
+    color: #fff;
+    display: block;
+    width: 100%;
+    line-height: 50px;
+    border-radius: 7px;
+    font-family: 'Advent Pro', sans-serif;
+    font-weight: 500;
+    transition: 300ms;
+}
+.container-form button:hover {
+    background-color: #000;
+}
+.container-form .Description {
+    margin: 20px 0 20px 0;
+}
+.container-form .form-login {
+    max-width: 575px;
+}
+.container-form .form-login .metabottom input {
+    height: 20px;
+    width: 20px;
+    margin-bottom: 0;
+    margin-right: 10px;   
+    cursor: pointer;
+}
+.container-form .form-login .metabottom {
+    margin: 5px 0 15px 0;
+}
+.login-for-social .or{
+    text-align: center;
+    position:relative;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.login-for-social .or .text{
+    background-color: #fff;
+    padding: 0 20px;
+    z-index: 2;
+    text-transform: uppercase;
+    color: #000;
+    position:relative;
+}
+.login-for-social .or .line{
+    position:absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 1px;
+    width: 100%;
+    background-color: #eaeaea;
+}
+.wrap-social{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    justify-content: center;
+}
+.wrap-social a{
+    margin: 5px 0;
+    display: block;
+    line-height: 40px;
+    padding: 0 35px;
+    font-size: 14px;
+    border-radius: 5px;
+    color: #fff;
+}
+.wrap-social .login-fb{
+    background-color: #395693;
+}
+.wrap-social .login-gg{
+    background-color: #D7472F;
+}
+.wrap-social .login-tw{
+    background-color: #1C9CEA;
+}
+.change-signup {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 14px;
+    color: #000;
+    font-weight: 400;
+}
+.change-signup a,.field-forgot-password a{
+    font-weight: 600;
+    color: #C97F5F;
+    text-decoration: underline transparent;
+    transition: 300ms;
+}
+.change-signup a:hover,.field-forgot-password a:hover{
+    text-decoration: underline #C97F5F;
+}
+.field-forgot-password a{
+    color: #C97F5F;
+    font-weight: 500;
+}
+
+@media (max-width:575px) {
+    .container-form .form-login {
+     padding: 30px 15px;
+ }
+}
