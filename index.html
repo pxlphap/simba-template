@@ -143,15 +143,47 @@
                     </ul>
                 </div>
             </div>
-            <div class="pxl-cart">
-                <h6>Your Cart</h6>
-                <li class="pxl-close-cart">
-                    <div class="close-button"></div>
-                </li>
-                <ul class="pxl-cart-wrap">
+            <div class="pxl-cart-wrap">
+                <div class="pxl-cart-header">
+                    <h4 class="primary_color">Your Cart</h4>
+                    <div class="pxl-close-cart">
+                        <div class="close-button"></div>
+                    </div>
+                </div>
+
+                <ul class="pxl-cart-list">
                     <li class="pxl-cart-item">
                         <div class="flex">
-
+                            <div class="cart-img">
+                                <img src="./assets/images/home/cart-img.avif" />
+                            </div>
+                            <div class="cart-content">
+                                <h6><a href="cart-product-name text_color">Body Lotion</a></h6>
+                                <p class="product-meta">Vanilla</p>
+                                <div class="pricing">$600.00</div>
+                                <form action="" class="pxl-form-quantity">
+                                    <button class="reduce">-</button>
+                                    <input class="quantity" type="number" value="1" min="0">
+                                    <button class="increase">+</button>
+                                </form>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="pxl-cart-item">
+                        <div class="flex">
+                            <div class="cart-img">
+                                <img src="./assets/images/home/cart-img.avif" />
+                            </div>
+                            <div class="cart-content">
+                                <h6><a href="cart-product-name text_color">Body Lotion</a></h6>
+                                <p class="product-meta">Vanilla</p>
+                                <div class="pricing">$600.00</div>
+                                <form action="" class="pxl-form-quantity">
+                                    <button class="reduce">-</button>
+                                    <input class="quantity" type="number" value="1" min="0">
+                                    <button class="increase">+</button>
+                                </form>
+                            </div>
                         </div>
                     </li>
                 </ul>
@@ -160,13 +192,13 @@
                     <p class="subtotal-price">
                         <span class="cart-original-total money">$600.00</span>
                     </p>
-                    <div class="total">
-                        <p>Shipping, taxes, and discounts will be calculated at checkout.</p>
-                    </div>
-                    <button type="submit" class="cart-checkout btn" name="checkout">
+                </div>
+                <div class="total">
+                    <p>Shipping, taxes, and discounts will be calculated at checkout.</p>
+                    <button type="submit" class="cart-checkout btn w-full" name="checkout">
                         Proceed to Checkout
                     </button>
-                    <a class="btn" href="./cart.html">View Cart</a>
+                    <a class="btn w-full" href="./cart.html">View Cart</a>
                 </div>
             </div>
         </div>
@@ -1401,6 +1433,7 @@
         </div>
     </div>
     <div class="pxl-content-popup"></div>
+    <div class="pxl-overlay"></div>
 </body>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="./assets/font/Awesome/js/all.min.js"></script>

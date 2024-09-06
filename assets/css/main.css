@@ -114,6 +114,20 @@ textarea {
     width: 100%;
 }
 
+.pxl-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: none;
+    z-index: 998;
+}
+
+.pxl-overlay.active {
+    display: block;
+}
 
 /* Header */
 
@@ -404,6 +418,122 @@ textarea {
 
 .close-button::after {
     transform: rotate(45deg);
+}
+
+.pxl-cart-wrap {
+    max-width: 300px;
+    background-color: #FDF3EB;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1001;
+    transform: translateX(100%);
+    transition: all 0.3s linear 0s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.pxl-cart-wrap.active {
+    transform: translateX(0%);
+    opacity: 1;
+    visibility: visible;
+}
+
+.pxl-cart-header {
+    background-color: #fff;
+    min-height: 45px;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.25)
+}
+
+.pxl-cart-list {
+    padding: 20px;
+}
+
+.subtotal {
+    padding: 0 0px 20px;
+    margin: 0 20px;
+    border-bottom: 1px solid #865d4c;
+    display: flex;
+    justify-content: space-between;
+}
+
+.subtotal p {
+    font-weight: 700;
+}
+
+.total {
+    padding: 20px;
+}
+
+.total button,
+.total a {
+    padding: 0;
+    line-height: 47px;
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+}
+
+.pxl-cart-header h4 {
+    line-height: 45px;
+    padding: 0 15px;
+    font-size: 30px;
+}
+
+.pxl-close-cart {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translateX(-100%);
+    background-color: #fff;
+    border: 2px solid var(--primary-color);
+    width: 30px;
+    height: 30px;
+}
+
+.pxl-close-cart .close-button {
+    width: 26px;
+    height: 26px;
+}
+
+.cart-img {
+    max-width: 60px;
+}
+
+.pxl-cart-item {
+    border-bottom: 1px solid #865d4c;
+}
+
+.pxl-cart-item .flex {
+    gap: 20px;
+}
+
+.pxl-form-quantity {
+    display: flex;
+    /* border: 1px solid #865d4c; */
+    margin-bottom: 15px;
+}
+
+.pxl-form-quantity input {
+    width: 40px;
+    height: 30px;
+    border-left: 0px;
+    border-right: 0px;
+    padding: 0;
+    text-align: center;
+}
+
+.pxl-form-quantity button {
+    width: 30px;
+    height: 30px;
+    display: grid;
+    place-items: center;
+    border: 1px solid #865d4c;
+}
+
+.pxl-cart-item+.pxl-cart-item {
+    padding-top: 15px;
 }
 
 /* 
