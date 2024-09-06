@@ -2,8 +2,9 @@
     color: var(--primary-color);
     background-color: #fff;
     border: 2px solid var(--primary-color);
-    padding: 10px 30px;
+    padding: 5px 10px;
     cursor: pointer;
+    border-radius: 10px;
 }
 
 .btn:hover {

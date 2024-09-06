@@ -8,10 +8,12 @@
         var sticky = header.offset().top;
         $(document).on('click', '.pxl-icon-menu-mobile', function () {
             $('.pxl-header-mobile, .pxl-overlay').addClass('active');
+            $('.pxl-wrap-user-meta').removeClass('active');
         });
 
         $(document).on('click', '.pxl-cart', function () {
             $('.pxl-cart-wrap, .pxl-overlay').addClass('active');
+            $('.pxl-wrap-user-meta').removeClass('active');
         });
 
         $(document).on('click', '.pxl-item-has-child', function () {
@@ -31,6 +33,35 @@
             $('.popup-child-menu,.pxl-cart-wrap,.pxl-header-mobile').removeClass('active');
         });
 
+        $(document).on('click', '.pxl-content-popup', function () {
+            $('.pxl-content-popup').empty().removeClass('active');
+        });
+
+        $(document).on('click', '.pxl-user', function () {
+            $('.pxl-wrap-user-meta').toggleClass('active');
+        });
+
+        //Video
+        $(document).ready(function () {
+            $(document).on('click', '#video_icon', function (event) {
+                event.preventDefault();
+                var $videoId = $(this).attr('data-video-id');
+                console.log('Video ID:', $videoId);
+
+                if ($('.pxl-content-popup').length === 0) {
+                    console.error('.pxl-content-popup container not found');
+                    return;
+                }
+
+                $('.pxl-content-popup').empty().addClass('active');
+
+                $('.pxl-content-popup').append('<div class="pxl-overlay-video"></div><div class="pxl-video-modal-content"><iframe src="https://www.youtube.com/embed/' + $videoId + '" allowfullscreen></iframe></div>');
+
+                $('.pxl-content-popup').show();
+            });
+        });
+
+        // Quantity
         $(document).on('click', '.pxl-form-quantity button', function () {
             event.preventDefault();
             var $parent = $(this).parent();
@@ -163,12 +194,7 @@
     });
     $('.woocommerce-cart-form .actions .button').removeAttr('disabled');
 
-    //Video
-    $(document).on('click', '.pxl-video', function () {
-        var $videoId = $(this).attr('data-video-id');
-        console.log($videoId);
-        $('.pxl-content-popup').append('<div class="pxl-video-modal-content"><iframe src="https://www.youtube.com/embed/' + $videoId + '" allowfullscreen></iframe></div>');
-    });
+
 
 
 })(jQuery);
