@@ -345,3 +345,7 @@
         margin-top: 0;
     }
 }
+
+.noDiscount .badge , .noDiscount .price-sale{
+    display: none;
+}
