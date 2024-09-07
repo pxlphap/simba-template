@@ -1224,7 +1224,13 @@ textarea {
     top: 50%;
     transform: translateY(-50%);
 }
-
+.inWidget{
+    text-align: center;
+}
+.inWidget .pxl-slick-arrow, .inWidget .pxl-wrap-nav{
+    top: auto;
+    transform: translateY(0%);
+}
 .pxl-slick-arrow:hover {
     border-color: var(--link-color-hover);
 }

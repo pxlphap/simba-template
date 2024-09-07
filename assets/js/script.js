@@ -125,7 +125,9 @@
             cssEase: 'linear',
             slidesToShow: 1,
             slidesToScroll: 1,
-            arrows: false
+            arrows: true,
+            prevArrow: $('.pxl-slick-prev'),
+            nextArrow: $('.pxl-slick-next'),
         });
 
         $productSlider2.slick({
