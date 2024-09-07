@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="./assets/images/base/favicon.png" type="image/png">
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
@@ -23,11 +24,9 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/class.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/slider.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/main.css">
-    <link rel="stylesheet" type="text/css" href="./assets/css/shop.css">
-    <link rel="stylesheet" type="text/css" href="./assets/css/checkout.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/reponsive.css">
-    <link rel="shortcut icon" href="./assets/images/base/favicon.png" type="image/png">
-    <title>Checkout - Simba</title>
+    <link rel="stylesheet" href="./assets/css/table.css">
+    <title>Table - Simba</title>
 </head>
 
 <body>
@@ -209,183 +208,288 @@
             <div class="container">
                 <div class="row j-center">
                     <div class="wrapbreadcrumb text-center">
-                        <h1 class="uppercase" style="font-size: 36px; margin-bottom: 15px;">Checkout</h1>
+                        <h1 class="uppercase" style="font-size: 36px; margin-bottom: 15px;">Login</h1>
                         <div class="pxl-breadcrumb">
                             <a href="#">Home</a>
                             <span aria-hidden="true" class="breadcrumb__sep">/</span>
-                            <span>Checkout</span>
+                            <span>Login</span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="pxl-content">
-            <section class="pxl-section pxl-content-checkout">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12 col-md-6 col-lg-7">
-                            <div class="column-billing-fields">
-                                <h3 class="title-checkout">Billing details</h3>
-                                <form class="form-checkout" action="#" method="post">
-                                    <div class="item-input">
-                                        <div class="label-checkout">Fist Name *</div>
-                                        <input type="text" class="form-control" placeholder="First name (optional)"
-                                            style="width: 100%">
-                                    </div>
-                                    <div class="item-input selector">
-                                        <div class="label-checkout">Address *</div>
-                                        <div class="selector-address">
-                                            <select name="paginateBy" id="paginateBy"
-                                                data-select2-id="select2-data-paginateBy" tabindex="-1"
-                                                class="select2-hidden-accessible" aria-hidden="true">
-                                                <option value="london" data-select2-id="select2-data-2-u74z">London
-                                                </option>
-                                                <option value="12">New Jork</option>
-                                                <option value="16">Melburnd</option>
-                                                <option value="20">Tokio</option>
-                                                <option value="24">Seoul</option>
-                                                <option value="30">Texas</option>
-                                                <option value="48">Califonia</option>
-                                            </select><span class="select2 select2-container select2-container--classic"
-                                                dir="ltr" data-select2-id="select2-data-1-163b"
-                                                style="width: 55px;"><span class="selection"><span
-                                                        class="select2-selection select2-selection--single"
-                                                        role="combobox" aria-haspopup="true" aria-expanded="false"
-                                                        tabindex="0" aria-disabled="false"
-                                                        aria-labelledby="select2-paginateBy-container"
-                                                        aria-controls="select2-paginateBy-container"><span
-                                                            class="select2-selection__arrow" role="presentation"><b
-                                                                role="presentation"></b></span></span></span><span
-                                                    class="dropdown-wrapper" aria-hidden="true"></span></span>
-                                        </div>
-                                        <input type="text" class="form-control"
-                                            placeholder="Apartment, suite, etc. (optional)" style="width: 100%">
-                                    </div>
-                                    <div class="item-input">
-                                        <div class="label-checkout">Town/City *</div>
-                                        <input type="text" class="form-control" placeholder="City" style="width: 100%">
-                                    </div>
-                                    <div class="item-input">
-                                        <div class="label-checkout">Order Notes *</div>
-                                        <textarea placeholder="Notes about your order." style="width: 100%"></textarea>
-                                    </div>
-                                    <div class="btn-form-billing">
-                                        <button type="submit" class="btn-form-checkout">Continue To Shipping</button>
-                                        <a class="btn-return" href="#">Return to cart</a>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
+            <div class="container">
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>ClassName</th>
+                                <th>Type</th>
+                                <th>Hours</th>
+                                <th>Trainer</th>
+                                <th>Sport</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td data-label="ClassName">Yoga</td>
+                                <td data-label="Type">Group</td>
+                                <td data-label="Hours">10</td>
+                                <td data-label="Trainer">John Doe</td>
+                                <td data-label="Sport">Fitness</td>
+                            </tr>
+                            <tr>
+                                <td data-label="ClassName">Pilates</td>
+                                <td data-label="Type">Individual</td>
+                                <td data-label="Hours">12</td>
+                                <td data-label="Trainer">Jane Smith</td>
+                                <td data-label="Sport">Fitness</td>
+                            </tr>
+                            <tr>
+                                <td data-label="ClassName">Swimming</td>
+                                <td data-label="Type">Group</td>
+                                <td data-label="Hours">8</td>
+                                <td data-label="Trainer">Paul Lee</td>
+                                <td data-label="Sport">Aquatics</td>
+                            </tr>
+                            <tr>
+                                <td data-label="ClassName">Yoga</td>
+                                <td data-label="Type">Group</td>
+                                <td data-label="Hours">10</td>
+                                <td data-label="Trainer">John Doe</td>
+                                <td data-label="Sport">Fitness</td>
+                            </tr>
+                            <tr>
+                                <td data-label="ClassName">Pilates</td>
+                                <td data-label="Type">Individual</td>
+                                <td data-label="Hours">12</td>
+                                <td data-label="Trainer">Jane Smith</td>
+                                <td data-label="Sport">Fitness</td>
+                            </tr>
+                            <tr>
+                                <td data-label="ClassName">Swimming</td>
+                                <td data-label="Type">Group</td>
+                                <td data-label="Hours">8</td>
+                                <td data-label="Trainer">Paul Lee</td>
+                                <td data-label="Sport">Aquatics</td>
+                            </tr>
+                            <tr>
+                                <td data-label="ClassName">Yoga</td>
+                                <td data-label="Type">Group</td>
+                                <td data-label="Hours">10</td>
+                                <td data-label="Trainer">John Doe</td>
+                                <td data-label="Sport">Fitness</td>
+                            </tr>
+                            <tr>
+                                <td data-label="ClassName">Pilates</td>
+                                <td data-label="Type">Individual</td>
+                                <td data-label="Hours">12</td>
+                                <td data-label="Trainer">Jane Smith</td>
+                                <td data-label="Sport">Fitness</td>
+                            </tr>
+                            <tr>
+                                <td data-label="ClassName">Swimming</td>
+                                <td data-label="Type">Group</td>
+                                <td data-label="Hours">8</td>
+                                <td data-label="Trainer">Paul Lee</td>
+                                <td data-label="Sport">Aquatics</td>
+                            </tr>
 
-                        <div class="col-12 col-md-6 col-lg-5">
-                            <div class="column-order">
-                                <h3 class="title-checkout">Your order summery</h3>
-                                <div class="item-product order">
-                                    <div class="product-thumbnail">
-                                        <div class="meta-info-product">
-                                            <a href="#" class="pxl-thumb" style="max-width: 80px">
-                                                <img src="./assets/images/shop/img-pr-1.webp" alt="img-shop">
-                                                <div class="badge-number">
-                                                    1
-                                                </div>
-                                            </a>
-                                            <h3 class="product-title">
-                                                <a href="#">Body Lotion</a>
-                                                <div class="sub-title-pr">Color: Red</div>
-                                            </h3>
-                                        </div>
-                                    </div>
-                                    <div class="product-info-price">
-                                        <div class="price-main">$500.00</div>
-                                    </div>
-                                </div>
-                                <div class="item-product order">
-                                    <div class="product-thumbnail">
-                                        <div class="meta-info-product">
-                                            <a href="#" class="pxl-thumb" style="max-width: 80px">
-                                                <img src="./assets/images/shop/img-pr-1.webp" alt="img-shop">
-                                                <div class="badge-number">
-                                                    1
-                                                </div>
-                                            </a>
-                                            <h3 class="product-title">
-                                                <a href="#">Face Skincare</a>
-                                                <div class="sub-title-pr">Color: Pink</div>
-                                            </h3>
-                                        </div>
-                                    </div>
-                                    <div class="product-info-price">
-                                        <div class="price-main">$500.00</div>
-                                    </div>
-                                </div>
-                                <div class="item-product order">
-                                    <div class="product-thumbnail">
-                                        <div class="meta-info-product">
-                                            <a href="#" class="pxl-thumb" style="max-width: 80px">
-                                                <img src="./assets/images/shop/img-pr-1.webp" alt="img-shop">
-                                                <div class="badge-number">
-                                                    1
-                                                </div>
-                                            </a>
-                                            <h3 class="product-title">
-                                                <a href="#">Cologne Spray</a>
-                                                <div class="sub-title-pr">Color: Green</div>
-                                            </h3>
-                                        </div>
-                                    </div>
-                                    <div class="product-info-price">
-                                        <div class="price-main">$500.00</div>
-                                    </div>
-                                </div>
-                                <form class="form-gift-card">
-                                    <input type="text" class="form-control" placeholder="Gift card" style="width: 100%">
-                                    <button type="submit" class="btn-form-checkout">Apply</button>
-                                </form>
-                                <div class="total-price-info">
-                                    <div class="total-price">
-                                        <div class="sub-total">Subtotal</div>
-                                        <div class="total-main">$500.00</div>
-                                    </div>
-                                    <div class="total-price">
-                                        <div class="sub-total">Shipping</div>
-                                        <div class="total-main">Calculated at next step</div>
-                                    </div>
-                                </div>
-                                <div class="total-price-info">
-                                    <div class="total-price">
-                                        <div class="main-total-lable">Total</div>
-                                        <div class="main-total">$500.00</div>
-                                    </div>
-                                </div>
-                                <div class="title-payment">Payment</div>
-                                <ul class="list-item-category payment">
-                                    <li>
-                                        <div class="filter-custom-control">
-                                            <input type="radio" class="" name="filter.v.availability" value="1"
-                                                id="Filter-Availability-mobile-1">
-                                            <label class=" " for="Filter-Availability-mobile-1">
-                                                Credit Card
-                                            </label>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="filter-custom-control">
-                                            <input type="radio" class="" name="filter.v.availability" value="0"
-                                                id="Filter-Availability-mobile-2">
-                                            <label class=" " for="Filter-Availability-mobile-2">
-                                                Bank Transfer
-                                            </label>
-                                        </div>
-                                    </li>
-                                </ul>
-                                <div class="btn-check-now">
-                                    <button type="submit" class="btn-form-checkout">Checkout Now</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                            <tr>
+                                <td data-label="ClassName">Yoga</td>
+                                <td data-label="Type">Group</td>
+                                <td data-label="Hours">10</td>
+                                <td data-label="Trainer">John Doe</td>
+                                <td data-label="Sport">Fitness</td>
+                            </tr>
+                            <tr>
+                                <td data-label="ClassName">Pilates</td>
+                                <td data-label="Type">Individual</td>
+                                <td data-label="Hours">12</td>
+                                <td data-label="Trainer">Jane Smith</td>
+                                <td data-label="Sport">Fitness</td>
+                            </tr>
+                            <tr>
+                                <td data-label="ClassName">Swimming</td>
+                                <td data-label="Type">Group</td>
+                                <td data-label="Hours">8</td>
+                                <td data-label="Trainer">Paul Lee</td>
+                                <td data-label="Sport">Aquatics</td>
+                            </tr>
+                            <tr>
+                                <td data-label="ClassName">Yoga</td>
+                                <td data-label="Type">Group</td>
+                                <td data-label="Hours">10</td>
+                                <td data-label="Trainer">John Doe</td>
+                                <td data-label="Sport">Fitness</td>
+                            </tr>
+                            <tr>
+                                <td data-label="ClassName">Pilates</td>
+                                <td data-label="Type">Individual</td>
+                                <td data-label="Hours">12</td>
+                                <td data-label="Trainer">Jane Smith</td>
+                                <td data-label="Sport">Fitness</td>
+                            </tr>
+                            <tr>
+                                <td data-label="ClassName">Swimming</td>
+                                <td data-label="Type">Group</td>
+                                <td data-label="Hours">8</td>
+                                <td data-label="Trainer">Paul Lee</td>
+                                <td data-label="Sport">Aquatics</td>
+                            </tr>
+                            <tr>
+                                <td data-label="ClassName">Yoga</td>
+                                <td data-label="Type">Group</td>
+                                <td data-label="Hours">10</td>
+                                <td data-label="Trainer">John Doe</td>
+                                <td data-label="Sport">Fitness</td>
+                            </tr>
+                            <tr>
+                                <td data-label="ClassName">Pilates</td>
+                                <td data-label="Type">Individual</td>
+                                <td data-label="Hours">12</td>
+                                <td data-label="Trainer">Jane Smith</td>
+                                <td data-label="Sport">Fitness</td>
+                            </tr>
+                            <tr>
+                                <td data-label="ClassName">Swimming</td>
+                                <td data-label="Type">Group</td>
+                                <td data-label="Hours">8</td>
+                                <td data-label="Trainer">Paul Lee</td>
+                                <td data-label="Sport">Aquatics</td>
+                            </tr>
+                            <tr>
+                                <td data-label="ClassName">Yoga</td>
+                                <td data-label="Type">Group</td>
+                                <td data-label="Hours">10</td>
+                                <td data-label="Trainer">John Doe</td>
+                                <td data-label="Sport">Fitness</td>
+                            </tr>
+                            <tr>
+                                <td data-label="ClassName">Pilates</td>
+                                <td data-label="Type">Individual</td>
+                                <td data-label="Hours">12</td>
+                                <td data-label="Trainer">Jane Smith</td>
+                                <td data-label="Sport">Fitness</td>
+                            </tr>
+                            <tr>
+                                <td data-label="ClassName">Swimming</td>
+                                <td data-label="Type">Group</td>
+                                <td data-label="Hours">8</td>
+                                <td data-label="Trainer">Paul Lee</td>
+                                <td data-label="Sport">Aquatics</td>
+                            </tr>
+                            <tr>
+                                <td data-label="ClassName">Yoga</td>
+                                <td data-label="Type">Group</td>
+                                <td data-label="Hours">10</td>
+                                <td data-label="Trainer">John Doe</td>
+                                <td data-label="Sport">Fitness</td>
+                            </tr>
+                            <tr>
+                                <td data-label="ClassName">Pilates</td>
+                                <td data-label="Type">Individual</td>
+                                <td data-label="Hours">12</td>
+                                <td data-label="Trainer">Jane Smith</td>
+                                <td data-label="Sport">Fitness</td>
+                            </tr>
+                            <tr>
+                                <td data-label="ClassName">Swimming</td>
+                                <td data-label="Type">Group</td>
+                                <td data-label="Hours">8</td>
+                                <td data-label="Trainer">Paul Lee</td>
+                                <td data-label="Sport">Aquatics</td>
+                            </tr>
+                            <tr>
+                                <td data-label="ClassName">Yoga</td>
+                                <td data-label="Type">Group</td>
+                                <td data-label="Hours">10</td>
+                                <td data-label="Trainer">John Doe</td>
+                                <td data-label="Sport">Fitness</td>
+                            </tr>
+                            <tr>
+                                <td data-label="ClassName">Pilates</td>
+                                <td data-label="Type">Individual</td>
+                                <td data-label="Hours">12</td>
+                                <td data-label="Trainer">Jane Smith</td>
+                                <td data-label="Sport">Fitness</td>
+                            </tr>
+                            <tr>
+                                <td data-label="ClassName">Swimming</td>
+                                <td data-label="Type">Group</td>
+                                <td data-label="Hours">8</td>
+                                <td data-label="Trainer">Paul Lee</td>
+                                <td data-label="Sport">Aquatics</td>
+                            </tr>
+                            <tr>
+                                <td data-label="ClassName">Yoga</td>
+                                <td data-label="Type">Group</td>
+                                <td data-label="Hours">10</td>
+                                <td data-label="Trainer">John Doe</td>
+                                <td data-label="Sport">Fitness</td>
+                            </tr>
+                            <tr>
+                                <td data-label="ClassName">Pilates</td>
+                                <td data-label="Type">Individual</td>
+                                <td data-label="Hours">12</td>
+                                <td data-label="Trainer">Jane Smith</td>
+                                <td data-label="Sport">Fitness</td>
+                            </tr>
+                            <tr>
+                                <td data-label="ClassName">Swimming</td>
+                                <td data-label="Type">Group</td>
+                                <td data-label="Hours">8</td>
+                                <td data-label="Trainer">Paul Lee</td>
+                                <td data-label="Sport">Aquatics</td>
+                            </tr>
+                            <tr>
+                                <td data-label="ClassName">Yoga</td>
+                                <td data-label="Type">Group</td>
+                                <td data-label="Hours">10</td>
+                                <td data-label="Trainer">John Doe</td>
+                                <td data-label="Sport">Fitness</td>
+                            </tr>
+                            <tr>
+                                <td data-label="ClassName">Pilates</td>
+                                <td data-label="Type">Individual</td>
+                                <td data-label="Hours">12</td>
+                                <td data-label="Trainer">Jane Smith</td>
+                                <td data-label="Sport">Fitness</td>
+                            </tr>
+                            <tr>
+                                <td data-label="ClassName">Swimming</td>
+                                <td data-label="Type">Group</td>
+                                <td data-label="Hours">8</td>
+                                <td data-label="Trainer">Paul Lee</td>
+                                <td data-label="Sport">Aquatics</td>
+                            </tr>
+                            <tr>
+                                <td data-label="ClassName">Yoga</td>
+                                <td data-label="Type">Group</td>
+                                <td data-label="Hours">10</td>
+                                <td data-label="Trainer">John Doe</td>
+                                <td data-label="Sport">Fitness</td>
+                            </tr>
+                            <tr>
+                                <td data-label="ClassName">Pilates</td>
+                                <td data-label="Type">Individual</td>
+                                <td data-label="Hours">12</td>
+                                <td data-label="Trainer">Jane Smith</td>
+                                <td data-label="Sport">Fitness</td>
+                            </tr>
+                            <tr>
+                                <td data-label="ClassName">Swimming</td>
+                                <td data-label="Type">Group</td>
+                                <td data-label="Hours">8</td>
+                                <td data-label="Trainer">Paul Lee</td>
+                                <td data-label="Sport">Aquatics</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-            </section>
+            </div>
+
         </div>
         <div class="pxl-footer">
             <div class="pxl-top-footer">
