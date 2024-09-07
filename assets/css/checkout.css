@@ -1,0 +1,228 @@
+/* Checkout Page */
+.pxl-content-checkout {
+    background-color: #fff;
+    padding: 100px 0;
+}
+.title-checkout {
+    font-size: 30px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 15px;
+    font-family: 'Poppins';
+    letter-spacing: 0;
+}
+.label-checkout {
+    font-size: 18px !important;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.form-checkout .item-input input {
+    border-color: #cccccc;
+    height: 45px;
+    line-height: 45px;
+    font-size: 16px;
+    padding: 0 15px;
+}
+.form-checkout .item-input textarea {
+    border-color: #cccccc;
+    height: 200px;
+    font-size: 16px;
+    padding: 5px 15px 15px;
+}
+.form-checkout .item-input input:active,
+.form-checkout .item-input input:focus,
+.form-checkout .item-input input:hover,
+.form-checkout .item-input textarea:active,
+.form-checkout .item-input textarea:focus,
+.form-checkout .item-input textarea:hover {
+    border-color: var(--primary-color) !important;
+}
+.form-checkout .item-input {
+    margin-bottom: 20px;
+}
+.item-input .selector-address {
+    margin-bottom: 25px;
+}
+.selector-address select {
+    border: 1px solid #cccccc;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    font-size: 16px;
+    padding: 0 15px;
+}
+.selector-address .select2-selection__arrow b {
+    margin-left: -17px;
+}
+.btn-form-billing {
+    margin-top: 30px;
+}
+.btn-form-billing {
+
+}
+.btn-form-checkout {
+    background-color: var(--primary-color);
+    padding: 5px 30px;
+    height: 50px;
+    line-height: 1;
+    color: #fff;
+    font-size: 16px;
+    margin-right: 20px;
+    transition: all 0.3s ease;
+}
+.btn-form-checkout:hover {
+    background-color: #333333;
+    color: #fff;
+}
+.btn-return {
+    color: var(--primary-color);
+}
+.btn-return:hover {
+    color: #333333;
+}   
+.column-order {
+    padding: 30px 30px;
+    border-radius: 20px;
+    border: 2px solid #e6e6e6;
+    background-color: #ededed61;
+}
+.column-order h3 {
+    text-align: center;
+    font-family: 'Poppins';
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+.column-order .product-thumbnail {
+    overflow: visible;
+}
+.pxl-thumb {
+    border-radius: 5px;
+    position: relative;
+}
+.pxl-thumb img {
+    border-radius: 5px;
+}
+.pxl-thumb:after {
+    display: none;
+}
+.badge-number {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 100%;
+    color: #fff;
+    background-color: var(--primary-color);
+}
+.item-product.order {
+    position: relative;
+    margin-bottom: 20px;
+}
+.item-product.order .meta-info-product {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+}
+.item-product.order .product-title {
+    font-size: 15px;
+    margin-bottom: 0;
+}
+.product-info-price {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.form-gift-card {
+    margin-top: 40px;
+    display: block;
+}
+.form-gift-card input {
+    max-width: 200px;
+    margin-right: 15px;
+    height: 40px;
+    padding: 10px;
+    font-size: 14px;
+}
+.form-gift-card button {
+    height: 40px;
+    font-size: 14px;
+}
+.total-price-info {
+    padding-top: 20px;
+    margin-top: 30px;
+    border-top: 1px solid #e6e6e6;
+}
+.total-price {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.main-total,
+.main-total-lable {
+    font-size: 20px;
+    font-weight: 500;
+}
+.sub-title-pr {
+    font-size: 14px;
+    color: #666;
+    text-align: left;
+    margin-top: 4px;
+    font-weight: 300;
+}
+.list-item-category.payment li {
+    margin-bottom: 10px;
+}
+.list-item-category.payment li label {
+    font-size: 16px;
+}
+.column-order .title-payment {
+    text-align: left;
+    font-family: 'Poppins';
+    font-weight: 500;
+    margin: 10px 0;
+    font-size: 30px;
+}
+.btn-check-now button {
+    width: 100%;
+    margin-top: 30px;
+}
+
+/* Reponsive */
+@media (max-width: 1200px) {
+    .pxl-content-checkout {
+        padding: 60px 0;
+    }
+    .title-checkout {
+        font-size: 20px !important;
+    }
+    .item-product.order .product-title a {
+        font-size: 15px !important;
+    }
+    .sub-title-pr {
+        margin-top: 0px;
+    }
+    .column-order .title-payment {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 991px) {
+    .column-order {
+        padding: 30px 15px;
+        border-radius: 10px;
+    }
+}
+
+@media (max-width: 767px) {
+    .column-order {
+        margin-top: 50px;
+    }
+    .form-gift-card input {
+        max-width: 175px;
+    }
+}

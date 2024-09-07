@@ -473,6 +473,7 @@ textarea {
     text-align: center;
     display: block;
     margin-top: 10px;
+    font-size: 16px;
 }
 
 .pxl-cart-header h4 {
@@ -1224,13 +1225,17 @@ textarea {
     top: 50%;
     transform: translateY(-50%);
 }
-.inWidget{
+
+.inWidget {
     text-align: center;
 }
-.inWidget .pxl-slick-arrow, .inWidget .pxl-wrap-nav{
+
+.inWidget .pxl-slick-arrow,
+.inWidget .pxl-wrap-nav {
     top: auto;
     transform: translateY(0%);
 }
+
 .pxl-slick-arrow:hover {
     border-color: var(--link-color-hover);
 }
