@@ -2088,6 +2088,7 @@ form#contact_form_default button {
     z-index: 1000;
     opacity: 0;
     visibility: hidden;
+    overflow-y: scroll;
 }
 
 .pxl-wrap-product-popup.active {

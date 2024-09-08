@@ -46,6 +46,11 @@
             $('.pxl-wrap-user-meta').toggleClass('active');
         });
 
+        $(document).on('click', '.collection-view .change-mode', function () {
+            $('.change-mode').toggleClass('active');
+            $('.row2').toggleClass('column');
+        });
+
         //Video
         $(document).ready(function () {
             $(document).on('click', '#video_icon', function (event) {
