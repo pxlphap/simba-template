@@ -1897,18 +1897,17 @@ form#contact_form_default button {
 .container-form {
     max-width: 900px;
     margin: 0 auto;
-    min-height: 90vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 50px 15px;
+    padding: 100px 15px;
 }
 
 .container-form .form-login {
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
     background-color: #fff;
     border-radius: 10px;
-    padding: 50px 35px;
+    padding: 20px;
 }
 
 .container-form .form-login input {
@@ -1917,7 +1916,7 @@ form#contact_form_default button {
     transition: 300ms;
     border-radius: 7px;
     border-color: #eaeaea;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     padding-left: 20px;
     font-size: 16px;
     font-family: 'poppin', sans-serif;
@@ -1961,10 +1960,17 @@ form#contact_form_default button {
     font-family: 'Advent Pro', sans-serif;
     font-weight: 500;
     transition: 300ms;
+    margin-bottom: 5px;
 }
 
 .container-form button:hover {
     background-color: #000;
+}
+
+.container-form .title-form {
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 15px;
 }
 
 .container-form .Description {
@@ -1972,7 +1978,7 @@ form#contact_form_default button {
 }
 
 .container-form .form-login {
-    max-width: 575px;
+    max-width: 400px;
 }
 
 .container-form .form-login .metabottom input {
@@ -1992,6 +1998,16 @@ form#contact_form_default button {
     position: relative;
     margin-top: 30px;
     margin-bottom: 20px;
+}
+
+.linkToLogin,
+.linkToSignUp {
+    color: var(--link-color-hover);
+}
+
+.linkToLogin:hover,
+.linkToSignup:hover {
+    color: var(--primary-color);
 }
 
 .login-for-social .or .text {

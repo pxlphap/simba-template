@@ -51,6 +51,13 @@
             $('.row2').toggleClass('column');
         });
 
+
+        $('input[name="paymentmethod"]').on('click', function () {
+            var $value = $(this).val();
+            $('.payment-method-details').slideUp();
+            $('[data-method="' + $value + '"]').slideDown();
+        });
+
         //Video
         $(document).ready(function () {
             $(document).on('click', '#video_icon', function (event) {

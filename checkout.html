@@ -358,26 +358,79 @@
                                     </div>
                                 </div>
                                 <div class="title-payment">Payment</div>
-                                <ul class="list-item-category payment">
-                                    <li>
-                                        <div class="filter-custom-control">
-                                            <input type="radio" class="" name="filter.v.availability" value="1"
-                                                id="Filter-Availability-mobile-1">
-                                            <label class=" " for="Filter-Availability-mobile-1">
-                                                Credit Card
-                                            </label>
+                                <div class="order-payment-method">
+                                    <div class="single-payment-method show">
+                                        <div class="payment-method-name">
+                                            <div class="custom-control custom-radio">
+                                                <input type="radio" id="cashon" name="paymentmethod" value="cash"
+                                                    class="custom-control-input" checked="">
+                                                <label class="custom-control-label" for="cashon">Cash On
+                                                    Delivery</label>
+                                            </div>
                                         </div>
-                                    </li>
-                                    <li>
-                                        <div class="filter-custom-control">
-                                            <input type="radio" class="" name="filter.v.availability" value="0"
-                                                id="Filter-Availability-mobile-2">
-                                            <label class=" " for="Filter-Availability-mobile-2">
-                                                Bank Transfer
-                                            </label>
+                                        <div class="payment-method-details" data-method="cash" style="display: block;">
+                                            <p>Pay with cash upon delivery.</p>
                                         </div>
-                                    </li>
-                                </ul>
+                                    </div>
+
+                                    <div class="single-payment-method">
+                                        <div class="payment-method-name">
+                                            <div class="custom-control custom-radio">
+                                                <input type="radio" id="directbank" name="paymentmethod" value="bank"
+                                                    class="custom-control-input">
+                                                <label class="custom-control-label" for="directbank">Direct Bank
+                                                    Transfer</label>
+                                            </div>
+                                        </div>
+                                        <div class="payment-method-details" data-method="bank" style="display: none;">
+                                            <p>Make your payment directly into our bank account. Please use your Order
+                                                ID as the payment reference. Your order will not be shipped until the
+                                                funds have cleared in our account.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="single-payment-method">
+                                        <div class="payment-method-name">
+                                            <div class="custom-control custom-radio">
+                                                <input type="radio" id="checkpayment" name="paymentmethod" value="check"
+                                                    class="custom-control-input">
+                                                <label class="custom-control-label" for="checkpayment">Pay with
+                                                    Check</label>
+                                            </div>
+                                        </div>
+                                        <div class="payment-method-details" data-method="check" style="display: none;">
+                                            <p>Please send a check to Store Name, Store Street, Store Town, Store State
+                                                / County, Store Postcode.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="single-payment-method">
+                                        <div class="payment-method-name">
+                                            <div class="custom-control custom-radio ">
+                                                <input type="radio" id="paypalpayment" name="paymentmethod"
+                                                    value="paypal" class="custom-control-input">
+                                                <label class="custom-control-label dInlineGrid"
+                                                    for="paypalpayment">Paypal <img
+                                                        src="assets/images/shop/paypal-card.jpg"
+                                                        class="img-fluid paypal-card" alt="Paypal"></label>
+                                            </div>
+                                        </div>
+                                        <div class="payment-method-details" data-method="paypal" style="display: none;">
+                                            <p>Pay via PayPal; you can pay with your credit card if you don’t have a
+                                                PayPal account.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="summary-footer-area">
+                                        <div class="custom-control custom-checkbox mb-14">
+                                            <input type="checkbox" class="custom-control-input" id="terms" required="">
+                                            <label class="custom-control-label" for="terms">I have read and agree to the
+                                                website <a href="index.html">terms and conditions.</a></label>
+                                        </div>
+                                        <button type="submit" class="check-btn sqr-btn">Place Order</button>
+                                    </div>
+                                </div>
+
                                 <div class="btn-check-now">
                                     <button type="submit" class="btn-form-checkout">Checkout Now</button>
                                 </div>
