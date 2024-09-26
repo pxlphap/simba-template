@@ -1,4 +1,4 @@
-; (function ($) {
+(function ($) {
     $(window).on('load', function () {
         $('.btn-tab:first-child').trigger('click');
     });
@@ -97,11 +97,15 @@
         });
 
         $(window).scroll(function () {
+            var sticky = 300;
+            var header = $(".pxl-header-sticky");
+
             if ($(window).scrollTop() > sticky) {
                 header.addClass("active").css('z-index', '1000');
             } else {
                 header.removeClass("active");
             }
+
         });
         // Pxl Slider
         var $slickSlider = $('.pxl-slider .slick-slider');
