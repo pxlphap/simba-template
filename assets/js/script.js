@@ -1,4 +1,4 @@
-(function ($) {
+; (function ($) {
     $(window).on('load', function () {
         $('.btn-tab:first-child').trigger('click');
     });
@@ -42,9 +42,9 @@
             $('.pxl-content-popup').empty().removeClass('active');
         });
 
-        $(document).on('click', '.pxl-user', function () {
-            $('.pxl-wrap-user-meta').toggleClass('active');
-        });
+        // $(document).on('click', '.pxl-user', function () {
+        //     $('.pxl-wrap-user-meta').toggleClass('active');
+        // });
 
         $(document).on('click', '.collection-view .change-mode', function () {
             $('.change-mode').toggleClass('active');
@@ -105,7 +105,6 @@
             } else {
                 header.removeClass("active");
             }
-
         });
         // Pxl Slider
         var $slickSlider = $('.pxl-slider .slick-slider');
