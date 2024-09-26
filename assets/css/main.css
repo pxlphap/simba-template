@@ -309,19 +309,6 @@ textarea {
     color: var(--primary-color);
     font-size: 20px;
 } */
-.pxl-user:active+.pxl-cart+.pxl-wrap-user-meta,
-.pxl-user:focus+.pxl-cart+.pxl-wrap-user-meta {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(30px);
-}
-
-.pxl-wrap-user-meta:hover {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(30px);
-}
-
 .pxl-wrap-menu-right button.pxl-cart .pxl-count {
     position: absolute;
     width: 15px;

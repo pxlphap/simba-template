@@ -42,9 +42,16 @@
             $('.pxl-content-popup').empty().removeClass('active');
         });
 
-        // $(document).on('click', '.pxl-user', function () {
-        //     $('.pxl-wrap-user-meta').toggleClass('active');
-        // });
+        $(document).on('click', function (e) {
+            if (!$(e.target).closest('.pxl-wrap-user-meta, .pxl-user').length) {
+                $('.pxl-wrap-user-meta').removeClass('active');
+            }
+        });
+
+        $(document).on('click', '.pxl-user', function (e) {
+            e.stopPropagation();
+            $('.pxl-wrap-user-meta').toggleClass('active');
+        });
 
         $(document).on('click', '.collection-view .change-mode', function () {
             $('.change-mode').toggleClass('active');
