@@ -316,6 +316,12 @@ textarea {
     transform: translateY(30px);
 }
 
+.pxl-wrap-user-meta:hover {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(30px);
+}
+
 .pxl-wrap-menu-right button.pxl-cart .pxl-count {
     position: absolute;
     width: 15px;
