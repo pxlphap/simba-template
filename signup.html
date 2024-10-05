@@ -25,6 +25,9 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/main.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/reponsive.css">
     <link rel="shortcut icon" href="./assets/images/base/favicon.png" type="image/png">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
     <title>Sign up - Simba</title>
 </head>
 
@@ -238,6 +241,8 @@
                             <button type="submit">Sign up</button>
                         </form>
                         <div>I Have An Account ? <a href="./login.html" class="linkToLogin">Login now</a></div>
+
+                        <button type="button" class="btn btn-info btn-lg" id="alertbox">Click here</button>
                     </div>
                 </div>
             </div>
@@ -343,10 +348,36 @@
     </div>
     <div class="pxl-content-popup"></div>
     <div class="pxl-overlay"></div>
+
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Modal Header</h4>
+                </div>
+                <div class="modal-body">
+                    <p id="error"></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
 </body>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="./assets/font/Awesome/js/all.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
 <script src="./assets/js/script.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script>
+    $('#alertbox').click(function () {
+        $("#error").html("You Clicked on Click here Button");
+        $('#myModal').modal("show");
+    });
+</script>
 
 </html>
