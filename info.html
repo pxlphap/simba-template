@@ -25,8 +25,7 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/main.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/reponsive.css">
     <link rel="shortcut icon" href="./assets/images/base/favicon.png" type="image/png">
-
-    <title>Sign up - Simba</title>
+    <title>Contact - Simba</title>
 </head>
 
 <body>
@@ -116,131 +115,67 @@
                     </div>
                 </div>
             </div>
-            <div class="pxl-header-mobile">
-                <ul class="pxl-menu">
-                    <li class="pxl-close">
-                        <div class="close-button"></div>
-                    </li>
-                    <li class="pxl-active"><a href="#">Home</a></li>
-                    <li><a href="./about.html">About</a></li>
-                    <li class="pxl-item-has-child">
-                        <a href="#">Shop</a>
-                        <i class="fa-solid fa-chevron-down"></i>
-                    </li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="./contact.html">Contact</a></li>
-                </ul>
-                <div class="popup-child-menu">
-                    <ul class="pxl-child-menu">
-                        <li class="wrap-top-child-menu">
-                            <div class="prev-button"><i class="fa-solid fa-chevron-left"></i></div>
-                            <div class="close-button"></div>
-                        </li>
-                        <li><a href="#">Shop Grid</a></li>
-                        <li><a href="#">Product Details</a></li>
-                        <li><a href="#">Cart</a></li>
-                        <li><a href="#">Checkout</a></li>
-                        <li><a href="#">Account</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="pxl-cart-wrap">
-                <div class="pxl-cart-header">
-                    <h4 class="primary_color">Your Cart</h4>
-                    <div class="pxl-close-cart">
-                        <div class="close-button"></div>
-                    </div>
-                </div>
-
-                <ul class="pxl-cart-list">
-                    <li class="pxl-cart-item">
-                        <div class="flex">
-                            <div class="cart-img">
-                                <img src="./assets/images/home/cart-img.avif" />
-                            </div>
-                            <div class="cart-content">
-                                <h6><a href="cart-product-name text_color">Body Lotion</a></h6>
-                                <p class="product-meta">Vanilla</p>
-                                <div class="pricing">$600.00</div>
-                                <form action="" class="pxl-form-quantity">
-                                    <button class="reduce">-</button>
-                                    <input class="quantity" type="number" value="1" min="0">
-                                    <button class="increase">+</button>
-                                </form>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="pxl-cart-item">
-                        <div class="flex">
-                            <div class="cart-img">
-                                <img src="./assets/images/home/cart-img.avif" />
-                            </div>
-                            <div class="cart-content">
-                                <h6><a href="cart-product-name text_color">Body Lotion</a></h6>
-                                <p class="product-meta">Vanilla</p>
-                                <div class="pricing">$600.00</div>
-                                <form action="" class="pxl-form-quantity">
-                                    <button class="reduce">-</button>
-                                    <input class="quantity" type="number" value="1" min="0">
-                                    <button class="increase">+</button>
-                                </form>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-                <div class="subtotal">
-                    <p class="title">Total</p>
-                    <p class="subtotal-price">
-                        <span class="cart-original-total money">$600.00</span>
-                    </p>
-                </div>
-                <div class="total">
-                    <p>Shipping, taxes, and discounts will be calculated at checkout.</p>
-                    <button type="submit" class="cart-checkout btn w-full" name="checkout">
-                        Proceed to Checkout
-                    </button>
-                    <a class="btn w-full" href="./cart.html">View Cart</a>
-                </div>
-            </div>
         </div>
         <div class="pxl-page-title">
             <div class="container">
                 <div class="row j-center">
                     <div class="wrapbreadcrumb text-center">
-                        <h1 class="uppercase" style="font-size: 36px; margin-bottom: 15px;">Sign up</h1>
+                        <h1 class="uppercase" style="font-size: 36px; margin-bottom: 15px;">Contact</h1>
                         <div class="pxl-breadcrumb">
                             <a href="#">Home</a>
                             <span aria-hidden="true" class="breadcrumb__sep">/</span>
-                            <span>Sign up</span>
+                            <span>Contact</span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="pxl-content">
-            <div class="pxl-content-login">
-                <div class="container-form">
-                    <div class="form-login">
-                        <h3 class="title-form center">
-                            Sign up
-                        </h3>
-                        <form action="">
-                            <label for="username">Username</label>
-                            <input type="text" id="username" placeholder="Username">
+            <div class="pxl-section pxl-section-contact-us">
+                <div class="container">
+                    <div class="pxl-wrap flex">
 
-                            <label for="email">Email</label>
-                            <input type="email" id="email" placeholder="Email Address">
+                        <div class="pxl-wrap-contact-form w-full">
+                            <h5 class="pxl-title-form primary_color">Contact Me</h5>
+                            <div class="w-full">
+                                <form method="post" action="" id="contact_form_default" accept-charset="UTF-8"
+                                    class="contact-form-default">
+                                    <div class="form-group">
+                                        <label for="ContactFormFirstName">First Name</label>
+                                        <input type="text" id="ContactFormFirstName" class="input-full"
+                                            name="contact[firstName]" placeholder="Your First Name"
+                                            autocapitalize="words" value="">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="ContactFormLastName">Last Name</label>
+                                        <input type="text" id="ContactFormLastName" class="input-full"
+                                            name="contact[lastName]" placeholder="Your Last Name" autocapitalize="words"
+                                            value="">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="ContactFormPhone">Phone Number</label>
+                                        <input type="tel" id="ContactFormPhone" class="input-full" name="contact[phone]"
+                                            placeholder="Phone Number" pattern="[0-9\-]*" value="">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="ContactFormEmail">Email</label>
+                                        <input type="email" id="ContactFormEmail" class="input-full"
+                                            name="contact[email]" placeholder="Email" autocorrect="off"
+                                            autocapitalize="off" value="">
+                                    </div>
+                                    <div class="form-group textarea">
+                                        <label for="ContactFormMessage">Write Your Message</label>
+                                        <textarea rows="10" id="ContactFormMessage" class="input-full"
+                                            name="contact[body]" placeholder="Write Your Message"></textarea>
+                                    </div>
+                                    <button type="submit" class="button form">
+                                        Submit Now
+                                    </button>
+                                </form>
 
-                            <label for="password">Password</label>
-                            <input type="password" id="password" placeholder="Password">
 
-                            <label for="confirm-password">Confirm Password</label>
-                            <input type="password" id="confirm-password" placeholder="Confirm Password">
-                            <button type="submit">Sign up</button>
-                        </form>
-                        <div>I Have An Account ? <a href="./login.html" class="linkToLogin">Login now</a></div>
-
-                        <button type="button" class="btn btn-info btn-lg" id="alertbox">Click here</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -345,31 +280,10 @@
         </div>
     </div>
     <div class="pxl-content-popup"></div>
-    <div class="pxl-overlay"></div>
-
-    <div class="popup-content hide" id="myPopup">
-        <div class="popup-header fade-in">
-            <button type="button" class="close">&times;</button>
-            <h4 class="popup-title">Popup Header</h4>
-        </div>
-        <div class="popup-body">
-            <p id="error"></p>
-        </div>
-        <div class="popup-footer">
-            <button type="button" class="btn btn-default">Close</button>
-        </div>
-    </div>
 </body>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="./assets/font/Awesome/js/all.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
 <script src="./assets/js/script.js"></script>
-
-<script>
-    /* $('#alertbox').click(function () {
-        $("#error").html("You Clicked on Click here Button");
-        $('#mypopup').modal("show");
-    }); */
-</script>
 
 </html>

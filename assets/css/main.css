@@ -2237,7 +2237,7 @@ form#contact_form_default button {
 /* Modal popup */
 
 .fade-in-down {
-    animation: fadeInDown 1s ease-out;
+    animation: fadeInDown 0.3s ease-out;
 }
 
 #myPopup.popup-content {
