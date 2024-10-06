@@ -33,12 +33,9 @@
             $('.popup-child-menu, .pxl-header-mobile, .pxl-overlay, .pxl-cart-wrap').removeClass('active');
         });
 
-        $(document).on('click', '.pxl-overlay,.pxl-close-quickview', function () {
+        $(document).on('click', '.pxl-overlay,.pxl-close-quickview, button.close', function () {
             $(this).removeClass('active');
             $('.popup-child-menu, .pxl-cart-wrap,.pxl-header-mobile, .pxl-wrap-product-popup ').removeClass('active');
-        });
-
-        $(document).on('click', '.pxl-content-popup', function () {
             $('.pxl-content-popup').empty().removeClass('active');
         });
 

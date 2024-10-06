@@ -2252,6 +2252,14 @@ form#contact_form_default button {
 .popup-header {
     padding: 15px;
     border-bottom: 1px solid #e5e5e5;
+    position: relative;
+}
+
+.popup-header button {
+    font-size: 40px;
+    position: absolute;
+    right: 15px;
+    top: 0;
 }
 
 .popup-body {
