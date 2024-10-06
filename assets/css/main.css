@@ -2236,12 +2236,37 @@ form#contact_form_default button {
 
 /* Modal popup */
 
-#myModal.modal-content {
+.fade-in-down {
+    animation: fadeInDown 1s ease-out;
+}
+
+#myPopup.popup-content {
     width: 100%;
     max-width: 800px;
     background-color: #fdf3eb;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 6px;
+    background-clip: padding-box;
 }
 
-.fade-in-down {
-    animation: fadeInDown 1s ease-out;
+.popup-header {
+    padding: 15px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.popup-body {
+    padding: 15px;
+}
+
+.popup-footer {
+    padding: 15px;
+    text-align: right;
+    border-top: 1px solid #e5e5e5;
+}
+
+@media (min-width: 768px) {
+    .popup-content {
+        -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+    }
 }

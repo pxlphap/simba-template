@@ -240,8 +240,8 @@
 
     // modal popop
     $(document).on('click', '#alertbox', function () {
-        $('.pxl-content-popup').append($('#myModal').clone()).addClass('active');
-        $('#myModal').removeClass('hide').addClass('fade-in-down');
+        $('.pxl-content-popup').append($('#myPopup').clone()).addClass('active');
+        $('#myPopup').removeClass('hide').addClass('fade-in-down');
     });
 
 })(jQuery);
