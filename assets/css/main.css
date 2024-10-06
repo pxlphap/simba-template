@@ -116,6 +116,15 @@ textarea {
     font-size: 16px;
 }
 
+input:hover,
+input:focus,
+input:active,
+textarea:hover,
+textarea:focus,
+textarea:active {
+    border-color: #C97F5F !important;
+}
+
 .container {
     width: 100%;
 }
@@ -2222,4 +2231,17 @@ form#contact_form_default button {
 .pxl-close-quickview:hover .close-button::before,
 .pxl-close-quickview:hover .close-button::after {
     background-color: #fff;
+}
+
+
+/* Modal popup */
+
+#myModal.modal-content {
+    width: 100%;
+    max-width: 800px;
+    background-color: #fdf3eb;
+}
+
+.fade-in-down {
+    animation: fadeInDown 1s ease-out;
 }

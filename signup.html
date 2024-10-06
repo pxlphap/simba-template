@@ -349,21 +349,16 @@
     <div class="pxl-content-popup"></div>
     <div class="pxl-overlay"></div>
 
-    <div class="modal fade" id="myModal" role="dialog">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">Modal Header</h4>
-                </div>
-                <div class="modal-body">
-                    <p id="error"></p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-
+    <div class="modal-content hide" id="myModal">
+        <div class="modal-header fade-in">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+            <p id="error"></p>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         </div>
     </div>
 </body>
@@ -374,10 +369,10 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 <script>
-    $('#alertbox').click(function () {
+    /* $('#alertbox').click(function () {
         $("#error").html("You Clicked on Click here Button");
         $('#myModal').modal("show");
-    });
+    }); */
 </script>
 
 </html>

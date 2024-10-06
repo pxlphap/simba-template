@@ -238,6 +238,10 @@
     $('.woocommerce-cart-form .actions .button').removeAttr('disabled');
 
 
-
+    // modal popop
+    $(document).on('click', '#alertbox', function () {
+        $('.pxl-content-popup').append($('#myModal').clone()).addClass('active');
+        $('#myModal').removeClass('hide').addClass('fade-in-down');
+    });
 
 })(jQuery);
