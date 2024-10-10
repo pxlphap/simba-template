@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+
+    <link rel="stylesheet" type="text/css" href="./assets/font/Awesome/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/grid.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/button.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/font.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/mixin.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/class.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/slider.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/main.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/single-product.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/reponsive.css">
+    <link rel="shortcut icon" href="./assets/images/base/favicon.png" type="image/png">
+    <title>Simba</title>
+</head>
+
+<body>
+    <div class="pxl-wrapper">
+        <div class="pxl-header">
+            <div class="pxl-header-main">
+                <div class="container p-15-0">
+                    <div class="row al-center">
+                        <div class="col-4 flex j-start">
+                            <ul class="pxl-wrap-menu">
+                                <li class="pxl-active"><a href="#">Home</a></li>
+                                <li><a href="./about.html">About</a></li>
+                                <li class="pxl-item-has-child">
+                                    <a href="#">Shop</a>
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                    <ul class="pxl-child-menu">
+                                        <li><a href="#">Shop Grid</a></li>
+                                        <li><a href="#">Product Details</a></li>
+                                        <li><a href="#">Cart</a></li>
+                                        <li><a href="#">Checkout</a></li>
+                                        <li><a href="#">Account</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="./contact.html">Contact</a></li>
+                            </ul>
+                            <div class="pxl-icon-menu-mobile">
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="col-4 center">
+                            <a href="#" class="pxl-logo">
+                                <img src="./assets/images/base/logo.webp" alt="Logo" style="height: 66px;">
+                            </a>
+                        </div>
+                        <div class="pxl-wrap-menu-right col-4 flex j-end ">
+                            <button class="pxl-user">
+                                <i class="fa-solid fa-user"></i>
+                            </button>
+                            <button class="pxl-cart">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <span class="pxl-count">5</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pxl-header-main pxl-header-sticky">
+                <div class="container p-15-0">
+                    <div class="row al-center">
+                        <div class="col-4 flex j-start">
+                            <ul class="pxl-wrap-menu">
+                                <li class="pxl-active"><a href="#">Home</a></li>
+                                <li><a href="./about.html">About</a></li>
+                                <li class="pxl-item-has-child">
+                                    <a href="#">Shop</a>
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                    <ul class="pxl-child-menu">
+                                        <li><a href="#">Shop Grid</a></li>
+                                        <li><a href="#">Product Details</a></li>
+                                        <li><a href="#">Cart</a></li>
+                                        <li><a href="#">Checkout</a></li>
+                                        <li><a href="#">Account</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="./contact.html">Contact</a></li>
+                            </ul>
+                            <div class="pxl-icon-menu-mobile">
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="col-4 center">
+                            <a href="#" class="pxl-logo">
+                                <img src="./assets/images/base/logo.webp" alt="Logo" style="height: 66px;">
+                            </a>
+                        </div>
+                        <div class="pxl-wrap-menu-right col-4 flex j-end ">
+                            <button class="pxl-user">
+                                <i class="fa-solid fa-user"></i>
+                            </button>
+                            <button class="pxl-cart">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <span class="pxl-count">5</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pxl-header-mobile">
+                <ul class="pxl-menu">
+                    <li class="pxl-close">
+                        <div class="close-button"></div>
+                    </li>
+                    <li class="pxl-active"><a href="#">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li class="pxl-item-has-child">
+                        <a href="#">Shop</a>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+                <div class="popup-child-menu">
+                    <ul class="pxl-child-menu">
+                        <li class="wrap-top-child-menu">
+                            <div class="prev-button"><i class="fa-solid fa-chevron-left"></i></div>
+                            <div class="close-button"></div>
+                        </li>
+                        <li><a href="#">Shop Grid</a></li>
+                        <li><a href="#">Product Details</a></li>
+                        <li><a href="#">Cart</a></li>
+                        <li><a href="#">Checkout</a></li>
+                        <li><a href="#">Account</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pxl-cart-wrap">
+                <div class="pxl-cart-header">
+                    <h4 class="primary_color">Your Cart</h4>
+                    <div class="pxl-close-cart">
+                        <div class="close-button"></div>
+                    </div>
+                </div>
+
+                <ul class="pxl-cart-list">
+                    <li class="pxl-cart-item">
+                        <div class="flex">
+                            <div class="cart-img">
+                                <img src="./assets/images/home/cart-img.avif" />
+                            </div>
+                            <div class="cart-content">
+                                <h6><a href="cart-product-name text_color">Body Lotion</a></h6>
+                                <p class="product-meta">Vanilla</p>
+                                <div class="pricing">$600.00</div>
+                                <form action="" class="pxl-form-quantity">
+                                    <button class="reduce">-</button>
+                                    <input class="quantity" type="number" value="1" min="0">
+                                    <button class="increase">+</button>
+                                </form>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="pxl-cart-item">
+                        <div class="flex">
+                            <div class="cart-img">
+                                <img src="./assets/images/home/cart-img.avif" />
+                            </div>
+                            <div class="cart-content">
+                                <h6><a href="cart-product-name text_color">Body Lotion</a></h6>
+                                <p class="product-meta">Vanilla</p>
+                                <div class="pricing">$600.00</div>
+                                <form action="" class="pxl-form-quantity">
+                                    <button class="reduce">-</button>
+                                    <input class="quantity" type="number" value="1" min="0">
+                                    <button class="increase">+</button>
+                                </form>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="subtotal">
+                    <p class="title">Total</p>
+                    <p class="subtotal-price">
+                        <span class="cart-original-total money">$600.00</span>
+                    </p>
+                </div>
+                <div class="total">
+                    <p>Shipping, taxes, and discounts will be calculated at checkout.</p>
+                    <button type="submit" class="cart-checkout btn w-full" name="checkout">
+                        Proceed to Checkout
+                    </button>
+                    <a class="btn w-full" href="./cart.html">View Cart</a>
+                </div>
+            </div>
+        </div>
+        <!-- End Header -->
+        <!-- Page title -->
+        <div class="pxl-page-title">
+            <div class="container">
+                <div class="row j-center">
+                    <div class="wrapbreadcrumb text-center">
+                        <h1 class="uppercase" style="font-size: 36px; margin-bottom: 15px;">Product</h1>
+                        <div class="pxl-breadcrumb">
+                            <a href="#">All</a>
+                            <span aria-hidden="true" class="breadcrumb__sep">/</span>
+                            <span>Cologne Spray</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Content -->
+        <div class="pxl-content">
+            <section class="pxl-section section-viewport">
+                <div class="pxl-section-wrapper">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="wrap-section flex w-full">
+                                <div class="pxl-left">
+                                    <div class="pxl-product-carousel">
+                                        <div class="pxl-product-carousel-wrapper main-slider">
+                                            <div class="pxl-product-item">
+                                                <div class="pxl-wrap-item noDiscount">
+                                                    <div class="pxl-wrapImage">
+                                                        <img src="./assets/images/home/p8_600x.webp" alt="Product">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pxl-right">
+                                    <div class="product-meta-block">
+                                        <h5 class="product-title">Cologne Spray</h5>
+                                        <div class="product-price">
+                                            <h6 class="product-price-label product-label">Price:</h6>
+                                            <ul class="price-list">
+                                                <li class="product-price-current">
+                                                    <span class="money">$500.00</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="product-price">
+                                            <h6 class="product-vendor-label product-label">Vendor:</h6>
+                                            <a href="#" title="P &amp; G">P &amp; G</a>
+                                        </div>
+                                        <div class="product-price">
+                                            <h6 class="product-type-label product-label">Type:</h6>Perfume
+                                        </div>
+                                        <div class="product-price">
+                                            <h6 class="product-availability-label product-label">Availability:</h6>
+                                            <span class="in-stock">In stock!</span>
+                                        </div>
+                                        <div class="wooc-product-quantity"><span class="quantity-label">QUANTITY</span>
+                                            <div class="quantity"><input type="number" id="quantity_66da780d8a1d7"
+                                                    class="input-text qty text pxl-hover-transition" name="quantity"
+                                                    value="1" aria-label="Product quantity" size="4" min="1" max=""
+                                                    step="1" placeholder="" inputmode="numeric" autocomplete="off">
+                                            </div>
+                                        </div>
+                                        <div class="product-form-submit">
+                                            <button type="submit" class="btn">Add to cart</button>
+                                            <button type="submit" class="btn">Buy it now</button>
+                                            <button type="submit" class="btn">Add to wishlist</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- section 1-->
+            <section class="pxl-section section-tabs">
+                <div class="pxl-section-wrapper">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="pxl-group-tab w-full">
+                                <div class="tabs flex j-left">
+                                    <div class="btn btn-tab" id="pxl-tab-des">Product Description</div>
+                                    <div class="btn btn-tab" id="pxl-tab-info">Additional information</div>
+                                    <div class="btn btn-tab active" id="pxl-tab-review">REVIEWS</div>
+                                </div>
+                            </div>
+                            <div class="pxl-group-product">
+                                <ul class="pxl-wrap-block-product des" data-group="1">
+                                    <p>Nam tempus turpis at metus scelerisque placerat nulla deumantos solicitud felis.
+                                        Pellentesque diam dolor, elementum etos lobortis des mollis ut risus. Sedcus
+                                        faucibus an sullamcorper mattis drostique des commodo pharetras loremos.Donec
+                                        pretium egestas sapien et mollis.<br><strong></strong></p>
+                                    <p><strong>Lorem ipsum dolor sit amet</strong><br><span></span></p>
+                                    <p><span>Sonsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                                            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                            ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                                            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                            pariatur.</span></p>
+                                    <p><strong>Busey ipsum dolor sit amet</strong><br></p>
+                                    <p><span>Tortor at auctor urna nunc id cursus metus aliquam. Odio tempor orci
+                                            dapibus ultrices. Tortor condimentum lacinia quis vel eros donec ac odio.
+                                            Velit euismod in pellentesque massa placerat duis ultricies lacus.
+                                            Scelerisque purus semper eget duis at tellus at urna condimentum. Eu
+                                            facilisis sed odio morbi quis commodo odio aenean urpis massa sed
+                                            elemen.&nbsp;</span></p>
+                                    <p><strong>Vestibulum sit amet ipsum</strong></p>
+                                    <p>Praesent vestibulum congue tellus at fringilla. Curabitur vitae semper sem, eu
+                                        convallis est. Cras felis nunc commodo eu convallis vitae interdum non nisl.
+                                        Maecenas ac est sit amet augue pharetra convallis nec danos dui. Cras suscipit
+                                        quam et turpis eleifend vitae malesuada magna congue. Damus id ullamcorper
+                                        neque. Sed vitae mi a mi pretium aliquet ac sed elit. Pellentesque nulla eros
+                                        accumsan quis justo at tincidunt lobortis denimes loremous. Suspendisse
+                                        vestibulum lectus in lectus volutpat, ut dapibus purus pulvinar. Vestibulum sit
+                                        amet auctor ipsum.</p>
+                                </ul>
+                                <ul class="pxl-wrap-block-product info" data-group="2">
+                                    <p><strong>Returns Policy</strong></p>
+                                    <p>You may return most new, unopened items within 30 days of delivery for a full
+                                        refund. We'll also pay the return shipping costs if the return is a result of
+                                        our error (you received an incorrect or defective item, etc.).</p>
+                                    <p>You should expect to receive your refund within four weeks of giving your package
+                                        to the return shipper, however, in
+                                        many<span>&nbsp;</span>cases<span>&nbsp;</span>you will receive a refund more
+                                        quickly. This time period includes the transit time for us to receive your
+                                        return from the shipper (5 to 10 business days), the time it takes us to process
+                                        your return once we receive it (3 to 5 business days), and the time it takes
+                                        your bank to process our refund request (5 to 10 business days).</p>
+                                    <p>If you need to return an item,
+                                        simply<span>&nbsp;</span>login<span>&nbsp;</span>to your account, view the order
+                                        using the 'Complete Orders' link under the My Account menu and click the Return
+                                        Item(s) button. We'll notify you via e-mail of your refund once we've received
+                                        and processed the returned item.</p>
+                                    <p><strong>Shipping</strong></p>
+                                    <p>We can ship to virtually any address in the world. Note that there are
+                                        restrictions on some products, and some products cannot be shipped to
+                                        international destinations.</p>
+                                    <p>When you place an order, we will estimate shipping and delivery dates for you
+                                        based on the availability of your items and the shipping options you choose.
+                                        Depending on the shipping provider you choose, shipping date estimates may
+                                        appear on the shipping quotes page.</p>
+                                    <p>Please also note that the shipping rates for many items we sell are weight-based.
+                                        The weight of any such item can be found on its detail page. To reflect the
+                                        policies of the shipping companies we use, all weights will be rounded up to the
+                                        next full pound.</p>
+                                </ul>
+                                <ul class="pxl-wrap-block-product review" data-group="3">
+                                    <h2 class="spr-header-title">Customer Reviews</h2>
+                                    <div class="spr-summary">
+                                        <span class="spr-summary-caption"><span
+                                                class="spr-summary-actions-togglereviews">Based on 2 reviews</span>
+                                        </span><span class="spr-summary-actions">
+                                            <a href="#" class="btn">Write a review</a>
+                                        </span>
+                                    </div>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- section 3 -->
+            <section class="pxl-section section-3">
+                <div class="pxl-section-wrapper">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="pxl-heading text-center">
+                                <h4>
+                                    <svg height="439pt" viewBox="0 0 439.57422 439" width="439pt"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="m428.882812 376.707031-67.875-67.867187c-2.589843-2.597656-6.03125-4.027344-9.695312-4.027344 0 0-.003906 0-.007812 0-3.664063 0-7.109376 1.429688-9.699219 4.019531l-9.695313 9.695313-19.710937-19.714844c18.492187-21.519531 28.660156-48.589844 28.660156-77.265625 0-31.742187-12.359375-61.589844-34.808594-84.035156-6.878906-6.875-14.511719-12.679688-22.617187-17.597657v-92.199218c0-15.125-12.304688-27.425782-27.429688-27.425782h-168.398437l-2.671875 2.710938c-.003906.003906-.011719.007812-.015625.011719l-82.289063 83.527343-2.394531 2.476563-.23046875.234375v.007812l-.00390625.003907v25.980469l.00390625-.003907v296.476563c0 15.125 12.30468775 27.429687 27.42968775 27.429687h228.570312c15.125 0 27.429688-12.304687 27.429688-27.429687v-88.527344c5.542968-3.363281 10.84375-7.15625 15.835937-11.445312l19.710938 19.714843-9.695313 9.695313c-5.347656 5.347656-5.347656 14.046875 0 19.394531l67.878906 67.882813c6.90625 6.910156 16.089844 10.714843 25.863282 10.714843 9.765625 0 18.949218-3.804687 25.855468-10.714843 14.253907-14.257813 14.253907-37.464844 0-51.722657zm-106.308593-155.160156c0 26.867187-10.457031 52.125-29.453125 71.113281-18.996094 19.003906-44.25 29.457032-71.117188 29.457032-26.863281 0-52.117187-10.453126-71.109375-29.457032-18.996093-18.988281-29.460937-44.246094-29.460937-71.113281 0-26.859375 10.464844-52.117187 29.460937-71.105469 18.992188-19 44.246094-29.457031 71.109375-29.457031 26.867188 0 52.121094 10.457031 71.117188 29.457031 18.996094 18.988282 29.453125 44.246094 29.453125 71.105469zm-244.058594-185.78125c.820313-.835937 1.582031-1.605469 2.390625-2.425781.464844-.472656.921875-.9375 1.382812-1.40625v42.738281c0 5.042969-4.101562 9.140625-9.144531 9.140625h-42.046875c14.828125-15 32.164063-32.566406 47.417969-48.046875zm186.628906 375.949219c0 5.046875-4.101562 9.144531-9.140625 9.144531h-228.570312c-5.039063 0-9.144532-4.097656-9.144532-9.144531v-309.613282h54.855469c15.128907 0 27.429688-12.304687 27.429688-27.429687v-56.097656h155.429687c5.039063 0 9.140625 4.097656 9.140625 9.140625v83.125c-13.578125-5.289063-28.128906-8.140625-43.140625-8.140625-31.746094 0-61.59375 12.363281-84.039062 34.8125-22.453125 22.445312-34.816406 52.292969-34.816406 84.035156 0 31.75 12.363281 61.597656 34.816406 84.042969 22.445312 22.445312 52.292968 34.8125 84.039062 34.8125 15.011719 0 29.5625-2.855469 43.140625-8.140625zm150.8125 3.785156c-6.917969 6.921875-18.957031 6.902344-25.863281 0l-64.648438-64.652344 25.859376-25.855468 64.652343 64.644531c7.125 7.132812 7.125 18.730469 0 25.863281zm0 0">
+                                        </path>
+                                        <path d="m45.714844 137.429688h18.285156v18.285156h-18.285156zm0 0"></path>
+                                        <path d="m45.714844 192.289062h18.285156v18.285157h-18.285156zm0 0"></path>
+                                        <path d="m45.714844 247.144531h18.285156v18.285157h-18.285156zm0 0"></path>
+                                        <path d="m45.714844 302h18.285156v18.289062h-18.285156zm0 0"></path>
+                                        <path d="m45.714844 356.859375h18.285156v18.285156h-18.285156zm0 0"></path>
+                                    </svg>
+                                    <a id="trigger-enquiry">Enquiry about product?</a>
+                                </h4>
+                                <h3 class="pxl-mainTitle uppercase">Recommended products</h3>
+                            </div>
+                            <div class="pxl-group-product">
+                                <ul class="pxl-wrap-list-product" data-group="1">
+                                    <li class="item">
+                                        <div class="pxl-wrap-item noDiscount">
+                                            <div class="pxl-wrapImage">
+                                                <img src="./assets/images/home/p2.jpg" alt="Product" class="pxl-show">
+                                                <img src="./assets/images/home/p17.jpg" alt="Product" class="pxl-hide">
+                                                <a href="#" class="pxl-link-product"></a>
+                                                <ul class="pxl-wrapMeta">
+                                                    <li>
+                                                        <a href="#">
+                                                            <img src="./assets/images/icon/option.svg" alt="option">
+                                                        </a>
+                                                    </li>
+                                                    <li class="group-heart">
+                                                        <a href="#" class="show">
+                                                            <img src="./assets/images/icon/heart.svg" alt="love">
+                                                        </a>
+                                                        <a href="#" class="hide">
+                                                            <img src="./assets/images/icon/heart-active.svg"
+                                                                alt="loved">
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <img src="./assets/images/icon/icon-search.svg"
+                                                                alt="quick-view">
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="pxl-wrap-info">
+                                                <h6 class="pxl-product-name">
+                                                    <a class="uppercase primary_color"
+                                                        href="./detail-product.html">Facial
+                                                        Cream</a>
+                                                </h6>
+                                                <div class="pxl-product-price">$500</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="">
+                                        <div class="pxl-wrap-item noDiscount">
+                                            <div class="pxl-wrapImage">
+                                                <img src="./assets/images/home/p2.jpg" alt="Product" class="pxl-show">
+                                                <img src="./assets/images/home/p17.jpg" alt="Product" class="pxl-hide">
+                                                <a href="#" class="pxl-link-product"></a>
+                                                <ul class="pxl-wrapMeta">
+                                                    <li>
+                                                        <a href="#">
+                                                            <img src="./assets/images/icon/option.svg" alt="option">
+                                                        </a>
+                                                    </li>
+                                                    <li class="group-heart">
+                                                        <a href="#" class="show">
+                                                            <img src="./assets/images/icon/heart.svg" alt="love">
+                                                        </a>
+                                                        <a href="#" class="hide">
+                                                            <img src="./assets/images/icon/heart-active.svg"
+                                                                alt="loved">
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <img src="./assets/images/icon/icon-search.svg"
+                                                                alt="quick-view">
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="pxl-wrap-info">
+                                                <h6 class="pxl-product-name">
+                                                    <a class="uppercase primary_color"
+                                                        href="./detail-product.html">Facial
+                                                        Cream</a>
+                                                </h6>
+                                                <div class="pxl-product-price">$500</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="">
+                                        <div class="pxl-wrap-item noDiscount">
+                                            <div class="pxl-wrapImage">
+                                                <img src="./assets/images/home/p2.jpg" alt="Product" class="pxl-show">
+                                                <img src="./assets/images/home/p17.jpg" alt="Product" class="pxl-hide">
+                                                <a href="#" class="pxl-link-product"></a>
+                                                <ul class="pxl-wrapMeta">
+                                                    <li>
+                                                        <a href="#">
+                                                            <img src="./assets/images/icon/option.svg" alt="option">
+                                                        </a>
+                                                    </li>
+                                                    <li class="group-heart">
+                                                        <a href="#" class="show">
+                                                            <img src="./assets/images/icon/heart.svg" alt="love">
+                                                        </a>
+                                                        <a href="#" class="hide">
+                                                            <img src="./assets/images/icon/heart-active.svg"
+                                                                alt="loved">
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <img src="./assets/images/icon/icon-search.svg"
+                                                                alt="quick-view">
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="pxl-wrap-info">
+                                                <h6 class="pxl-product-name">
+                                                    <a class="uppercase primary_color"
+                                                        href="./detail-product.html">Facial
+                                                        Cream</a>
+                                                </h6>
+                                                <div class="pxl-product-price">$500</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="">
+                                        <div class="pxl-wrap-item noDiscount">
+                                            <div class="pxl-wrapImage">
+                                                <img src="./assets/images/home/p2.jpg" alt="Product" class="pxl-show">
+                                                <img src="./assets/images/home/p17.jpg" alt="Product" class="pxl-hide">
+                                                <a href="#" class="pxl-link-product"></a>
+                                                <ul class="pxl-wrapMeta">
+                                                    <li>
+                                                        <a href="#">
+                                                            <img src="./assets/images/icon/option.svg" alt="option">
+                                                        </a>
+                                                    </li>
+                                                    <li class="group-heart">
+                                                        <a href="#" class="show">
+                                                            <img src="./assets/images/icon/heart.svg" alt="love">
+                                                        </a>
+                                                        <a href="#" class="hide">
+                                                            <img src="./assets/images/icon/heart-active.svg"
+                                                                alt="loved">
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <img src="./assets/images/icon/icon-search.svg"
+                                                                alt="quick-view">
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="pxl-wrap-info">
+                                                <h6 class="pxl-product-name">
+                                                    <a class="uppercase primary_color"
+                                                        href="./detail-product.html">Facial
+                                                        Cream</a>
+                                                </h6>
+                                                <div class="pxl-product-price">$500</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- Footer -->
+        <div class="pxl-footer">
+            <div class="pxl-content-footer p-100-0">
+                <div class="container">
+                    <div class="row j-sb">
+                        <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            <a href="#">
+                                <img class="mb20" src="./assets/images/base/logo.webp" alt="Logo" style="height: 96px;">
+                            </a>
+                            <p style="max-width: 360px;">
+                                Beauty is the art of being the best possible version of yourself on the inside and
+                                outside, now. Simba Cosmetics upgrades you to the latest version!
+                            </p>
+                        </div>
+                        <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-xs-12 pl100 pl15-lg">
+                            <h5 class="mb20 primary_color sm-mt-20">Information</h5>
+                            <ul class="pxl-footer-menu">
+                                <li><a href="#">Delivery Information</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Terms &amp; Conditions</a></li>
+                                <li><a href="#">Shipping Details</a></li>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Manufactures</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-xs-12 pl100 pl15-lg">
+                            <h5 class="mb20 primary_color"> Cosmetics </h5>
+                            <ul class="pxl-footer-menu">
+                                <li><a href="#">Locations</a></li>
+                                <li><a href="#">Makeup</a></li>
+                                <li><a href="#">Search</a></li>
+                                <li><a href="#">Orders &amp; Returns</a></li>
+                                <li><a href="#">Help &amp; FAQs Store</a></li>
+                                <li><a href="#">News</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-xs-12 pl100 pl15-lg">
+                            <h5 class="mb20 primary_color">Contact us</h5>
+                            <ul class="pxl-contact-info">
+                                <li class="address">
+                                    <i class="fa fa-home"></i>No: 58 A, East Madison Street, Baltimore, MD,
+                                    USA 4508
+                                </li>
+                                <li class="contact-phone">
+                                    <i class="fa fa-phone"></i>0123456789
+                                </li>
+                                <li class="office-mail">
+                                    <a href="mailto:support@example.com">
+                                        <i class="fa fa-envelope"></i>support@example.com</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pxl-bottom-footer center p-15">
+                © 2024
+            </div>
+        </div>
+    </div>
+    <div class="pxl-content-popup"></div>
+    <div class="pxl-overlay"></div>
+    <div class="pxl-modal">
+        <div class="pxl-content">
+            <span class="close-button dt-sc-btn close-icon"></span>
+            <span class="pxl-content-inner">
+                <h5>Let us know abour your query!</h5>
+                <form method="post" action="/contact#contact_form" id="contact_form" accept-charset="UTF-8"
+                    class="contact-form"><input type="hidden" name="form_type" value="contact"><input type="hidden"
+                        name="utf8" value="✓">
+                    <input type="text" id="ContactFormName" name="contact[Name]" placeholder="Name">
+                    <input type="text" id="ContactFormEmail" name="contact[Email]" placeholder="Email">
+                    <input type="text" id="ContactFormPhone" name="contact[Phone]" placeholder="Phone">
+                    <textarea rows="7" type="textarea" id="ContactFormMsg" name="contact[Msg]"
+                        placeholder="Subject"></textarea>
+                    <div class="pxl-choose">
+                        <input type="radio" id="ContactViaEmail" name="contact[By]" value="Email">
+                        <label for="ContactViaEmail">Mail</label>
+                        <input type="radio" id="contactFormViaPhone" name="contact[By]" value="Phone">
+                        <label for="contactFormViaPhone">Phone</label>
+                        <input type="radio" id="contactFormViaBoth" name="contact[By]" value="Both">
+                        <label for="contactFormViaBoth">Both</label>
+                    </div>
+                    <button type="submit" class="btn">Send</button>
+                </form>
+
+            </span>
+        </div>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="./assets/font/Awesome/js/all.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+<script src="./assets/js/script.js"></script>
+
+</html>

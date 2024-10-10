@@ -7,7 +7,7 @@
 :root {
     --primary-color: #865d4c;
     --text-color: #2a2a2a;
-    --link-color-hover: #4ae2f0;
+    --link-color-hover: #C67572;
     --body-bg-color: #fdf3eb;
 }
 
@@ -575,17 +575,20 @@ textarea:active {
     transform: translateY(30px);
 }
 
-.pxl-wrap-user-meta li a {
+.pxl-wrap-user-meta li a,
+.pxl-wrap-user-meta li span {
     line-height: 42px;
     color: #fff;
     width: 100%;
+    cursor: pointer;
 }
 
-.pxl-wrap-user-meta li:hover a {
+.pxl-wrap-user-meta li:hover a,
+.pxl-wrap-user-meta li:hover span {
     color: var(--link-color-hover);
 }
 
-/* 
+/*
 .popup-child-menu {
     position: absolute;
     top: 0;
@@ -644,11 +647,12 @@ textarea:active {
 }
 
 .pxl-list-social li a {
-    width: 50px;
+    /*width: 50px;*/
     height: 50px;
     border-radius: 0px;
     background-color: transparent;
     transition: all 0.3s ease;
+    margin-right: 50px;
 }
 
 .pxl-list-social li a:hover {
@@ -682,6 +686,10 @@ textarea:active {
 
 .pxl-contact-info li+li {
     margin-top: 5px;
+}
+
+.pxl-contact-info li:last-child {
+    padding-left: 0px;
 }
 
 .pxl-contact-info svg {
@@ -1107,7 +1115,7 @@ textarea:active {
 }
 
 .pxl-product-item .pxl-wrapImage {
-    cursor: pointer;
+    /*cursor: pointer;*/
     position: relative;
 }
 
@@ -1871,12 +1879,13 @@ form#contact_form_default button {
 }
 
 .contact-form-default input,
-.contact-form-default textarea {
+.contact-form-default textarea,
+.my-modal input {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    font-size: 16px;
+    font-size: 15px;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -1899,6 +1908,10 @@ form#contact_form_default button {
     color: #fff;
     border-radius: 10px;
     font-weight: 600;
+}
+
+.contact-form-default button:hover {
+    background-color: #000;
 }
 
 /*login css*/
@@ -1971,8 +1984,26 @@ form#contact_form_default button {
     margin-bottom: 5px;
 }
 
+
 .container-form button:hover {
     background-color: #000;
+}
+
+.modal-submit {
+    background-color: #C97F5F;
+    color: #fff;
+    border: solid 2px #C97F5F;
+}
+
+.modal-submit:hover {
+    background-color: #000;
+    border: solid 2px #000;
+    color: #fff;
+}
+
+.modal-close:hover {
+    border: 2px solid #000;
+    color: #000;
 }
 
 .container-form .title-form {
@@ -2240,13 +2271,21 @@ form#contact_form_default button {
     animation: fadeInDown 0.3s ease-out;
 }
 
-#myPopup.popup-content {
-    width: 100%;
+.my-modal.popup-content {
+    width: 600px;
     max-width: 800px;
     background-color: #fdf3eb;
     border: 1px solid rgba(0, 0, 0, .2);
     border-radius: 6px;
     background-clip: padding-box;
+}
+
+.my-modal .error {
+    color: #C97F5F;
+    font-size: 15px;
+    position: relative;
+    top: 7px;
+    display: none
 }
 
 .popup-header {
@@ -2256,7 +2295,7 @@ form#contact_form_default button {
 }
 
 .popup-header button {
-    font-size: 40px;
+    font-size: 25px;
     position: absolute;
     right: 15px;
     top: 0;

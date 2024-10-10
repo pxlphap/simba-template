@@ -350,13 +350,14 @@
     <div class="popup-content hide" id="myPopup">
         <div class="popup-header fade-in">
             <button type="button" class="close">&times;</button>
-            <h4 class="popup-title">Popup Header</h4>
+            <h6 class="popup-title">Popup Header</h6>
         </div>
         <div class="popup-body">
             <p id="error"></p>
         </div>
         <div class="popup-footer">
             <button type="button" class="btn btn-default close">Close</button>
+            <button type="button" class="btn btn-default test">Test</button>
         </div>
     </div>
 </body>
@@ -370,6 +371,11 @@
         $("#error").html("You Clicked on Click here Button");
         $('#mypopup').modal("show");
     }); */
+
+    $(document).on('click', '.test', function () {
+        alert('aaaa');
+    })
+
 </script>
 
 </html>
