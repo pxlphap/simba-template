@@ -24,12 +24,14 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/slider.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/main.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/reponsive.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/toast.css">
     <link rel="shortcut icon" href="./assets/images/base/favicon.png" type="image/png">
 
     <title>Sign up - Simba</title>
 </head>
 
 <body>
+    <div id="toast"></div>
     <div class="pxl-wrapper">
         <div class="pxl-header">
             <div class="pxl-header-main">
@@ -240,7 +242,7 @@
                         </form>
                         <div>I Have An Account ? <a href="./login.html" class="linkToLogin">Login now</a></div>
 
-                        <button type="button" class="btn btn-info btn-lg" id="alertbox">Click here</button>
+                        <button type="button" class="btn btn-info btn-lg" id="showToast">Click here</button>
                     </div>
                 </div>
             </div>
@@ -365,6 +367,7 @@
 <script src="./assets/font/Awesome/js/all.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
 <script src="./assets/js/script.js"></script>
+<script src="./assets/js/toast.js"></script>
 
 <script>
     /* $('#alertbox').click(function () {
@@ -372,9 +375,32 @@
         $('#mypopup').modal("show");
     }); */
 
-    $(document).on('click', '.test', function () {
-        alert('aaaa');
+    // $(document).on('click', '.test', function () {
+    //     alert('aaaa');
+    // })
+
+    $(document).on('click', '#showToast', function () {
+        showErrorToast();
     })
+
+
+    function showSuccessToast() {
+        toast({
+            title: "Thành công!",
+            message: "Bạn đã đăng ký thành công tài khoản tại F8.",
+            type: "success",
+            duration: 2000
+        });
+    }
+
+    function showErrorToast() {
+        toast({
+            title: "Thất bại!",
+            message: "Có lỗi xảy ra, vui lòng liên hệ quản trị viên.",
+            type: "error",
+            duration: 2000
+        });
+    }
 
 </script>
 
