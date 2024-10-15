@@ -168,7 +168,7 @@ select.no-arrow {
     overflow: hidden;
     display: -webkit-box;
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2
+    -webkit-line-clamp: 3
 }
 
 .product-info-price {
