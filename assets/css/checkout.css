@@ -9,7 +9,7 @@
     font-weight: 600;
     color: #000;
     margin-bottom: 15px;
-    font-family: 'Poppins';
+    font-family: 'Open Sans';
     letter-spacing: 0;
 }
 
@@ -110,7 +110,7 @@ select.no-arrow {
 
 .column-order h3 {
     text-align: center;
-    font-family: 'Poppins';
+    font-family: 'Open Sans';
     font-weight: 600;
     margin-bottom: 40px;
 }
@@ -223,7 +223,7 @@ select.no-arrow {
 
 .column-order .title-payment {
     text-align: left;
-    font-family: 'Poppins';
+    font-family: 'Open Sans';
     font-weight: 500;
     margin: 10px 0;
     font-size: 30px;
