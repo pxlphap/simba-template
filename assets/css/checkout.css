@@ -49,6 +49,13 @@
 
 .item-input .selector-address {
     margin-bottom: 25px;
+
+}
+
+select.no-arrow {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
 .selector-address select {
