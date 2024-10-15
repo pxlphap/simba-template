@@ -149,6 +149,10 @@ select.no-arrow {
 .item-product.order {
     position: relative;
     margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    align-items: center;
 }
 
 .item-product.order .meta-info-product {
@@ -160,13 +164,15 @@ select.no-arrow {
 .item-product.order .product-title {
     font-size: 15px;
     margin-bottom: 0;
+    text-align: left;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2
 }
 
 .product-info-price {
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
+    position: relative;
 }
 
 .form-gift-card {
