@@ -71,10 +71,10 @@
 
 
 /* Blog Grid */
-.pxl-wrap-blog.column-2 {
+.pxl-wrap-blog.column-3 {
     margin: 0;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .pxl-wrap-nav {
