@@ -71,6 +71,11 @@
     .pxl-wrap-contact-form {
         padding: 40px 40px 40px 60px;
     }
+
+    .section-7 .container-fluid {
+        width: 100%;
+    }
+
 }
 
 @media screen and (max-width: 991px) {
@@ -101,10 +106,6 @@
 
     .section-2 .pxl-right {
         width: 80%;
-    }
-
-    .pxl-wrap-blog {
-        flex-direction: column;
     }
 
     .pxl-group-team {

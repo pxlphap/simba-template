@@ -1383,6 +1383,10 @@ textarea:active {
     padding: 100px 0;
 }
 
+.section-7 .container-fluid {
+    width: 90%;
+}
+
 .section-7 .pxl-mainTitle {
     margin-bottom: 50px;
 }
@@ -1391,11 +1395,6 @@ textarea:active {
     margin-bottom: 10px;
 }
 
-.pxl-wrap-blog {
-    display: flex;
-    margin: 0 5%;
-    gap: 30px;
-}
 
 .pxl-wrap-blog .pxl-blog-item {
     margin-bottom: 30px;
