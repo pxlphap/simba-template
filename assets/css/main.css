@@ -1384,9 +1384,7 @@ textarea:active {
 }
 
 .section-7 .container-fluid,
-.pxl-content-blogs .container-fluid {
-    width: 90%;
-}
+.pxl-content-blogs .container-fluid {}
 
 .section-7 .pxl-mainTitle {
     margin-bottom: 50px;
@@ -1404,6 +1402,15 @@ textarea:active {
 .pxl-wrap-blog .pxl-blog-content {
     padding: 30px 30px 40px;
     background-color: #fff;
+}
+
+.pxl-wrap-blog .pxl-blog-content h5 {
+    font-size: 20px;
+    height: 48px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
 }
 
 .pxl-wrap-blog .pxl-blog-content .pxl-blog-meta {
