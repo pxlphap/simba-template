@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+
+    <link rel="stylesheet" type="text/css" href="./assets/font/Awesome/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/grid.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/button.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/font.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/mixin.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/class.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/slider.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/main.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/shop.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/reponsive.css">
+    <link rel="shortcut icon" href="./assets/images/base/favicon.png" type="image/png">
+    <title>Shop - Simba</title>
+</head>
+
+<body>
+    <div class="pxl-wrapper">
+        <div class="pxl-header">
+            <div class="pxl-header-main">
+                <div class="container p-15-0">
+                    <div class="row al-center">
+                        <div class="col-4 flex j-start">
+                            <ul class="pxl-wrap-menu">
+                                <li class="pxl-active"><a href="#">Home</a></li>
+                                <li><a href="./about.html">About</a></li>
+                                <li class="pxl-item-has-child">
+                                    <a href="#">Shop</a>
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                    <ul class="pxl-child-menu">
+                                        <li><a href="#">Shop Grid</a></li>
+                                        <li><a href="#">Product Details</a></li>
+                                        <li><a href="#">Cart</a></li>
+                                        <li><a href="#">Checkout</a></li>
+                                        <li><a href="#">Account</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="./contact.html">Contact</a></li>
+                            </ul>
+                            <div class="pxl-icon-menu-mobile">
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="col-4 center">
+                            <a href="#" class="pxl-logo">
+                                <img src="./assets/images/base/logo.webp" alt="Logo" style="height: 66px;">
+                            </a>
+                        </div>
+                        <div class="pxl-wrap-menu-right col-4 flex j-end ">
+                            <button class="pxl-user">
+                                <i class="fa-solid fa-user"></i>
+                            </button>
+                            <button class="pxl-cart">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <span class="pxl-count">5</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pxl-header-main pxl-header-sticky">
+                <div class="container p-15-0">
+                    <div class="row al-center">
+                        <div class="col-4 flex j-start">
+                            <ul class="pxl-wrap-menu">
+                                <li class="pxl-active"><a href="#">Home</a></li>
+                                <li><a href="./about.html">About</a></li>
+                                <li class="pxl-item-has-child">
+                                    <a href="#">Shop</a>
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                    <ul class="pxl-child-menu">
+                                        <li><a href="#">Shop Grid</a></li>
+                                        <li><a href="#">Product Details</a></li>
+                                        <li><a href="#">Cart</a></li>
+                                        <li><a href="#">Checkout</a></li>
+                                        <li><a href="#">Account</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="./contact.html">Contact</a></li>
+                            </ul>
+                            <div class="pxl-icon-menu-mobile">
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="col-4 center">
+                            <a href="#" class="pxl-logo">
+                                <img src="./assets/images/base/logo.webp" alt="Logo" style="height: 66px;">
+                            </a>
+                        </div>
+                        <div class="pxl-wrap-menu-right col-4 flex j-end ">
+                            <button class="pxl-user">
+                                <i class="fa-solid fa-user"></i>
+                            </button>
+                            <button class="pxl-cart">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <span class="pxl-count">5</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pxl-page-title">
+            <div class="container">
+                <div class="row j-center">
+                    <div class="wrapbreadcrumb text-center">
+                        <h1 class="uppercase" style="font-size: 36px; margin-bottom: 15px;">Shop</h1>
+                        <div class="pxl-breadcrumb">
+                            <a href="#">Home</a>
+                            <span aria-hidden="true" class="breadcrumb__sep">/</span>
+                            <span>Shop</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="pxl-content">
+            <section class="pxl-section pxl-content-shop">
+                <div class="container">
+                    <div class="row row-grid-shop-sidebar">
+
+
+                        <div class="col-12 main-content-shop">
+                            <div class="row1">
+                                <div class="main-content-header">
+                                    <div class="collection-header">
+                                        <div class="collection-view" data-view="">
+                                            <a title="Grid view" class="change-mode active" data-view="grid">
+                                                <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="m0 0h138.5v138.5h-138.5zm0 0"></path>
+                                                    <path d="m373.5 0h138.5v138.5h-138.5zm0 0"></path>
+                                                    <path d="m186.75 0h138.5v138.5h-138.5zm0 0"></path>
+                                                    <path d="m0 186.75h138.5v138.5h-138.5zm0 0"></path>
+                                                    <path d="m373.5 186.75h138.5v138.5h-138.5zm0 0"></path>
+                                                    <path d="m186.75 186.75h138.5v138.5h-138.5zm0 0"></path>
+                                                    <path d="m0 373.5h138.5v138.5h-138.5zm0 0"></path>
+                                                    <path d="m373.5 373.5h138.5v138.5h-138.5zm0 0"></path>
+                                                    <path d="m186.75 373.5h138.5v138.5h-138.5zm0 0"></path>
+                                                </svg>
+                                            </a>
+                                            <a title="List view" class="change-mode" data-view="list">
+                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                    viewBox="0 0 512 512" xml:space="preserve">
+                                                    <path d="M0-0.3h113.3v142.5H0V-0.3z"></path>
+                                                    <path d="M149.3-0.3H512v142.5H149.3V-0.3z"></path>
+                                                    <path d="M0,184.6h113.3v142.5H0V184.6z"></path>
+                                                    <path d="M149.3,184.6H512v142.5H149.3V184.6z"></path>
+                                                    <path d="M0,369.5h113.3V512H0V369.5z"></path>
+                                                    <path d="M149.3,369.5H512V512H149.3V369.5z"></path>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <div class="collection-items-per-page">
+                                            <label for="paginateBy">Paginate by</label>
+                                            <select name="paginateBy" id="paginateBy"
+                                                data-select2-id="select2-data-paginateBy" tabindex="-1"
+                                                class="select2-hidden-accessible" aria-hidden="true">
+                                                <option value="9" data-select2-id="select2-data-2-u74z">9</option>
+                                                <option value="12">12</option>
+                                                <option value="16">16</option>
+                                                <option value="20">20</option>
+                                                <option value="24">24</option>
+                                                <option value="30">30</option>
+                                                <option value="48">48</option>
+                                            </select><span class="select2 select2-container select2-container--classic"
+                                                dir="ltr" data-select2-id="select2-data-1-163b"
+                                                style="width: 55px;"><span class="selection"><span
+                                                        class="select2-selection select2-selection--single"
+                                                        role="combobox" aria-haspopup="true" aria-expanded="false"
+                                                        tabindex="0" aria-disabled="false"
+                                                        aria-labelledby="select2-paginateBy-container"
+                                                        aria-controls="select2-paginateBy-container"><span
+                                                            class="select2-selection__arrow" role="presentation"><b
+                                                                role="presentation"></b></span></span></span><span
+                                                    class="dropdown-wrapper" aria-hidden="true"></span></span>
+                                        </div>
+                                        <div class="sortby">
+                                            <label for="SortBy">Sort by </label>
+                                            <select name="SortBy" id="SortBy"
+                                                class="dT_SortBy select2-hidden-accessible"
+                                                data-select2-id="select2-data-SortBy" tabindex="-1" aria-hidden="true">
+                                                <option value="manual" data-select2-id="select2-data-4-sv3c">Featured
+                                                </option>
+                                                <option value="best-selling">Best selling</option>
+                                                <option value="title-ascending">Alphabetically, A-Z</option>
+                                                <option value="title-descending">Alphabetically, Z-A</option>
+                                                <option value="price-ascending">Price, low to high</option>
+                                                <option value="price-descending">Price, high to low</option>
+                                                <option value="created-ascending">Date, old to new</option>
+                                                <option value="created-descending">Date, new to old</option>
+                                            </select><span class="select2 select2-container select2-container--classic"
+                                                dir="ltr" data-select2-id="select2-data-3-gzbn"
+                                                style="width: 185px;"><span class="selection"><span
+                                                        class="select2-selection select2-selection--single"
+                                                        role="combobox" aria-haspopup="true" aria-expanded="false"
+                                                        tabindex="0" aria-disabled="false"
+                                                        aria-labelledby="select2-SortBy-container"
+                                                        aria-controls="select2-SortBy-container"><span
+                                                            class="select2-selection__arrow" role="presentation"><b
+                                                                role="presentation"></b></span></span></span><span
+                                                    class="dropdown-wrapper" aria-hidden="true"></span></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row2">
+                                <div class="grid-item-product onDiscount">
+                                    <div class="item-product">
+                                        <div class="product-thumbnail">
+                                            <a href="#" class="pxl-thumb">
+                                                <img src="./assets/images/shop/img-pr-1.webp" alt="img-shop"
+                                                    style="width: 100%">
+                                            </a>
+                                            <div class="badge badge-sale">
+                                                <span>Sale</span>
+                                            </div>
+                                            <div class="badge offer-price">
+                                                <span>Save <b>23%</b></span>
+                                            </div>
+                                            <ul class="pxl-wrapMeta">
+                                                <li>
+                                                    <a href="#">
+                                                        <img src="./assets/images/icon/option.svg" alt="option">
+                                                    </a>
+                                                </li>
+                                                <li class="group-heart">
+                                                    <a href="#" class="show">
+                                                        <img src="./assets/images/icon/heart.svg" alt="love">
+                                                    </a>
+                                                    <a href="#" class="hide">
+                                                        <img src="./assets/images/icon/heart-active.svg" alt="loved">
+                                                    </a>
+                                                </li>
+                                                <li class="pxl-show-quickview">
+                                                    <a href="#">
+                                                        <img src="./assets/images/icon/icon-search.svg"
+                                                            alt="quick-view">
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="product-info">
+                                            <h3 class="product-title">
+                                                <a href="#">Body Lotion</a>
+                                            </h3>
+                                            <div class="product-price">
+                                                <div class="price-main">$500.00</div>
+                                                <div class="price-sale">$600.00</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid-item-product noDiscount">
+                                    <div class="item-product">
+                                        <div class="product-thumbnail">
+                                            <a href="#" class="pxl-thumb">
+                                                <img src="./assets/images/shop/img-pr-2.webp" alt="img-shop"
+                                                    style="width: 100%">
+                                            </a>
+                                            <ul class="pxl-wrapMeta">
+                                                <li>
+                                                    <a href="#">
+                                                        <img src="./assets/images/icon/option.svg" alt="option">
+                                                    </a>
+                                                </li>
+                                                <li class="group-heart">
+                                                    <a href="#" class="show">
+                                                        <img src="./assets/images/icon/heart.svg" alt="love">
+                                                    </a>
+                                                    <a href="#" class="hide">
+                                                        <img src="./assets/images/icon/heart-active.svg" alt="loved">
+                                                    </a>
+                                                </li>
+                                                <li class="pxl-show-quickview">
+                                                    <a href="#">
+                                                        <img src="./assets/images/icon/icon-search.svg"
+                                                            alt="quick-view">
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="product-info">
+                                            <h3 class="product-title">
+                                                <a href="#">Body Lotion</a>
+                                            </h3>
+                                            <div class="product-price">
+                                                <div class="price-main">$500.00</div>
+                                                <div class="price-sale">$600.00</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid-item-product onDiscount">
+                                    <div class="item-product">
+                                        <div class="product-thumbnail">
+                                            <a href="#" class="pxl-thumb">
+                                                <img src="./assets/images/shop/img-pr-3.webp" alt="img-shop"
+                                                    style="width: 100%">
+                                            </a>
+                                            <div class="badge badge-sale">
+                                                <span>Sale</span>
+                                            </div>
+                                            <div class="badge offer-price">
+                                                <span>Save <b>13%</b></span>
+                                            </div>
+                                            <ul class="pxl-wrapMeta">
+                                                <li>
+                                                    <a href="#">
+                                                        <img src="./assets/images/icon/option.svg" alt="option">
+                                                    </a>
+                                                </li>
+                                                <li class="group-heart">
+                                                    <a href="#" class="show">
+                                                        <img src="./assets/images/icon/heart.svg" alt="love">
+                                                    </a>
+                                                    <a href="#" class="hide">
+                                                        <img src="./assets/images/icon/heart-active.svg" alt="loved">
+                                                    </a>
+                                                </li>
+                                                <li class="pxl-show-quickview">
+                                                    <a href="#">
+                                                        <img src="./assets/images/icon/icon-search.svg"
+                                                            alt="quick-view">
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="product-info">
+                                            <h3 class="product-title">
+                                                <a href="#">Body Lotion</a>
+                                            </h3>
+                                            <div class="product-price">
+                                                <div class="price-main">$500.00</div>
+                                                <div class="price-sale">$600.00</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid-item-product noDiscount">
+                                    <div class="item-product">
+                                        <div class="product-thumbnail">
+                                            <a href="#" class="pxl-thumb">
+                                                <img src="./assets/images/shop/img-pr-4.webp" alt="img-shop"
+                                                    style="width: 100%">
+                                            </a>
+                                            <ul class="pxl-wrapMeta">
+                                                <li>
+                                                    <a href="#">
+                                                        <img src="./assets/images/icon/option.svg" alt="option">
+                                                    </a>
+                                                </li>
+                                                <li class="group-heart">
+                                                    <a href="#" class="show">
+                                                        <img src="./assets/images/icon/heart.svg" alt="love">
+                                                    </a>
+                                                    <a href="#" class="hide">
+                                                        <img src="./assets/images/icon/heart-active.svg" alt="loved">
+                                                    </a>
+                                                </li>
+                                                <li class="pxl-show-quickview">
+                                                    <a href="#">
+                                                        <img src="./assets/images/icon/icon-search.svg"
+                                                            alt="quick-view">
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="product-info">
+                                            <h3 class="product-title">
+                                                <a href="#">Body Lotion</a>
+                                            </h3>
+                                            <div class="product-price">
+                                                <div class="price-main">$500.00</div>
+                                                <div class="price-sale">$600.00</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid-item-product onDiscount">
+                                    <div class="item-product">
+                                        <div class="product-thumbnail">
+                                            <a href="#" class="pxl-thumb">
+                                                <img src="./assets/images/shop/img-pr-5.webp" alt="img-shop"
+                                                    style="width: 100%">
+                                            </a>
+                                            <div class="badge badge-sale">
+                                                <span>Sale</span>
+                                            </div>
+                                            <div class="badge offer-price">
+                                                <span>Save <b>19%</b></span>
+                                            </div>
+                                            <ul class="pxl-wrapMeta">
+                                                <li>
+                                                    <a href="#">
+                                                        <img src="./assets/images/icon/option.svg" alt="option">
+                                                    </a>
+                                                </li>
+                                                <li class="group-heart">
+                                                    <a href="#" class="show">
+                                                        <img src="./assets/images/icon/heart.svg" alt="love">
+                                                    </a>
+                                                    <a href="#" class="hide">
+                                                        <img src="./assets/images/icon/heart-active.svg" alt="loved">
+                                                    </a>
+                                                </li>
+                                                <li class="pxl-show-quickview">
+                                                    <a href="#">
+                                                        <img src="./assets/images/icon/icon-search.svg"
+                                                            alt="quick-view">
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="product-info">
+                                            <h3 class="product-title">
+                                                <a href="#">Body Lotion</a>
+                                            </h3>
+                                            <div class="product-price">
+                                                <div class="price-main">$500.00</div>
+                                                <div class="price-sale">$600.00</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid-item-product noDiscount">
+                                    <div class="item-product">
+                                        <div class="product-thumbnail">
+                                            <a href="#" class="pxl-thumb">
+                                                <img src="./assets/images/shop/img-pr-6.webp" alt="img-shop"
+                                                    style="width: 100%">
+                                            </a>
+                                            <ul class="pxl-wrapMeta">
+                                                <li>
+                                                    <a href="#">
+                                                        <img src="./assets/images/icon/option.svg" alt="option">
+                                                    </a>
+                                                </li>
+                                                <li class="group-heart">
+                                                    <a href="#" class="show">
+                                                        <img src="./assets/images/icon/heart.svg" alt="love">
+                                                    </a>
+                                                    <a href="#" class="hide">
+                                                        <img src="./assets/images/icon/heart-active.svg" alt="loved">
+                                                    </a>
+                                                </li>
+                                                <li class="pxl-show-quickview">
+                                                    <a href="#">
+                                                        <img src="./assets/images/icon/icon-search.svg"
+                                                            alt="quick-view">
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="product-info">
+                                            <h3 class="product-title">
+                                                <a href="#">Body Lotion</a>
+                                            </h3>
+                                            <div class="product-price">
+                                                <div class="price-main">$500.00</div>
+                                                <div class="price-sale">$600.00</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid-item-product onDiscount">
+                                    <div class="item-product">
+                                        <div class="product-thumbnail">
+                                            <a href="#" class="pxl-thumb">
+                                                <img src="./assets/images/shop/img-pr-7.webp" alt="img-shop"
+                                                    style="width: 100%">
+                                            </a>
+                                            <div class="badge badge-sale">
+                                                <span>Sale</span>
+                                            </div>
+                                            <div class="badge offer-price">
+                                                <span>Save <b>23%</b></span>
+                                            </div>
+                                            <ul class="pxl-wrapMeta">
+                                                <li>
+                                                    <a href="#">
+                                                        <img src="./assets/images/icon/option.svg" alt="option">
+                                                    </a>
+                                                </li>
+                                                <li class="group-heart">
+                                                    <a href="#" class="show">
+                                                        <img src="./assets/images/icon/heart.svg" alt="love">
+                                                    </a>
+                                                    <a href="#" class="hide">
+                                                        <img src="./assets/images/icon/heart-active.svg" alt="loved">
+                                                    </a>
+                                                </li>
+                                                <li class="pxl-show-quickview">
+                                                    <a href="#">
+                                                        <img src="./assets/images/icon/icon-search.svg"
+                                                            alt="quick-view">
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="product-info">
+                                            <h3 class="product-title">
+                                                <a href="#">Body Lotion</a>
+                                            </h3>
+                                            <div class="product-price">
+                                                <div class="price-main">$500.00</div>
+                                                <div class="price-sale">$600.00</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid-item-product onDiscount">
+                                    <div class="item-product">
+                                        <div class="product-thumbnail">
+                                            <a href="#" class="pxl-thumb">
+                                                <img src="./assets/images/shop/img-pr-8.webp" alt="img-shop"
+                                                    style="width: 100%">
+                                            </a>
+                                            <div class="badge badge-sale">
+                                                <span>Sale</span>
+                                            </div>
+                                            <div class="badge offer-price">
+                                                <span>Save <b>28%</b></span>
+                                            </div>
+                                            <ul class="pxl-wrapMeta">
+                                                <li>
+                                                    <a href="#">
+                                                        <img src="./assets/images/icon/option.svg" alt="option">
+                                                    </a>
+                                                </li>
+                                                <li class="group-heart">
+                                                    <a href="#" class="show">
+                                                        <img src="./assets/images/icon/heart.svg" alt="love">
+                                                    </a>
+                                                    <a href="#" class="hide">
+                                                        <img src="./assets/images/icon/heart-active.svg" alt="loved">
+                                                    </a>
+                                                </li>
+                                                <li class="pxl-show-quickview">
+                                                    <a href="#">
+                                                        <img src="./assets/images/icon/icon-search.svg"
+                                                            alt="quick-view">
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="product-info">
+                                            <h3 class="product-title">
+                                                <a href="#">Body Lotion</a>
+                                            </h3>
+                                            <div class="product-price">
+                                                <div class="price-main">$500.00</div>
+                                                <div class="price-sale">$600.00</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid-item-product noDiscount">
+                                    <div class="item-product">
+                                        <div class="product-thumbnail">
+                                            <a href="#" class="pxl-thumb">
+                                                <img src="./assets/images/shop/img-pr-5.webp" alt="img-shop"
+                                                    style="width: 100%">
+                                            </a>
+                                            <ul class="pxl-wrapMeta">
+                                                <li>
+                                                    <a href="#">
+                                                        <img src="./assets/images/icon/option.svg" alt="option">
+                                                    </a>
+                                                </li>
+                                                <li class="group-heart">
+                                                    <a href="#" class="show">
+                                                        <img src="./assets/images/icon/heart.svg" alt="love">
+                                                    </a>
+                                                    <a href="#" class="hide">
+                                                        <img src="./assets/images/icon/heart-active.svg" alt="loved">
+                                                    </a>
+                                                </li>
+                                                <li class="pxl-show-quickview">
+                                                    <a href="#">
+                                                        <img src="./assets/images/icon/icon-search.svg"
+                                                            alt="quick-view">
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="product-info">
+                                            <h3 class="product-title">
+                                                <a href="#">Body Lotion</a>
+                                            </h3>
+                                            <div class="product-price">
+                                                <div class="price-main">$500.00</div>
+                                                <div class="price-sale">$600.00</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="pagination-default-shop text-center">
+                                <a href="#" title="Prev" class="btn-prev"><span class="fa fa-angle-left"></span></a>
+                                <a href="#">1</a>
+                                <a href="#">2</a>
+                                <a href="#">3</a>
+                                <a href="#">4</a>
+                                <a href="#">5</a>
+                                <a href="#" title="Next" class="btn-next"><span class="fa fa-angle-right"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+        <div class="pxl-footer">
+            <div class="pxl-top-footer">
+                <div class="container">
+                    <div class="row al-center">
+                        <div class="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-xs-12 center">
+                            <h2 class="pxl-heading uppercase primary_color ">Newsletter</h2>
+                        </div>
+                        <div class="col-xl-4 col-lg-9 col-md-12 col-sm-12 col-xs-12">
+                            <form action="" class="pxl-form-newsletter relative">
+                                <input type="email" placeholder="Your email address" class="w-full">
+                                <button type="submit" class="pxl-button-submit uppercase">Submit
+                                    <i class="fa-solid fa-paper-plane"></i></button>
+                            </form>
+                        </div>
+                        <div class="col-xl-4 col-lg-3 col-md-12 col-sm-12 col-xs-12 j-end center-md">
+                            <ul class="pxl-list-social flex j-end">
+                                <li>
+                                    <a href="#" target="_blank" class="center">
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank" class="center">
+                                        <i class="fa-brands fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank" class="center">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank" class="center">
+                                        <i class="fa-brands fa-tiktok"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pxl-content-footer p-100-0">
+                <div class="container">
+                    <div class="row j-sb">
+                        <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            <a href="#">
+                                <img class="mb20" src="./assets/images/base/logo.webp" alt="Logo" style="height: 96px;">
+                            </a>
+                            <p style="max-width: 360px;">
+                                Beauty is the art of being the best possible version of yourself on the inside and
+                                outside, now. Simba Cosmetics upgrades you to the latest version!
+                            </p>
+                        </div>
+                        <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-xs-12 pl100 pl15-lg">
+                            <h5 class="mb20 primary_color sm-mt-20">Information</h5>
+                            <ul class="pxl-footer-menu">
+                                <li><a href="#">Delivery Information</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Terms &amp; Conditions</a></li>
+                                <li><a href="#">Shipping Details</a></li>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Manufactures</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-xs-12 pl100 pl15-lg">
+                            <h5 class="mb20 primary_color"> Cosmetics </h5>
+                            <ul class="pxl-footer-menu">
+                                <li><a href="#">Locations</a></li>
+                                <li><a href="#">Makeup</a></li>
+                                <li><a href="#">Search</a></li>
+                                <li><a href="#">Orders &amp; Returns</a></li>
+                                <li><a href="#">Help &amp; FAQs Store</a></li>
+                                <li><a href="#">News</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-xs-12 pl100 pl15-lg">
+                            <h5 class="mb20 primary_color">Contact us</h5>
+                            <ul class="pxl-contact-info">
+                                <li class="address">
+                                    <i class="fa fa-home"></i>No: 58 A, East Madison Street, Baltimore, MD,
+                                    USA 4508
+                                </li>
+                                <li class="contact-phone">
+                                    <i class="fa fa-phone"></i>0123456789
+                                </li>
+                                <li class="office-mail">
+                                    <a href="mailto:support@example.com">
+                                        <i class="fa fa-envelope"></i>support@example.com</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pxl-bottom-footer center p-15">
+                © 2024
+            </div>
+        </div>
+    </div>
+    <div class="pxl-content-popup"></div>
+    <div class="pxl-wrap-product-popup"></div>
+    <div class="pxl-wrap-product-popup">
+        <div class="pxl-overlay pxl-popup"></div>
+        <div class="container relative">
+            <div class="pxl-close-quickview">
+                <div class="close-button" style="z-index: 1000;"></div>
+            </div>
+            <div class="row al-center">
+                <div class="col-xl-6 col-lg-6 col-sm-12">
+                    <div class="pxl-product-image-wrap">
+                        <div class="pxl-image-product-carousel slick-slider">
+                            <div class="pxl-image-item">
+                                <img src="./assets/images/shop/product-image-popup-1.webp" />
+                            </div>
+                            <div class="pxl-image-item">
+                                <img src="./assets/images/shop/product-image-popup-2.webp" />
+
+                            </div>
+                            <div class="pxl-image-item">
+                                <img src="./assets/images/shop/product-image-popup-3.webp" />
+                            </div>
+                        </div>
+                    </div>
+                    <button class="pxl-product-prev pxl-slick-arrow">
+                        <i class="fa fa-chevron-left"></i>
+                    </button>
+                    <button class="pxl-product-next pxl-slick-arrow">
+                        <i class="fa fa-chevron-right"></i>
+                    </button>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-sm-12 ">
+                    <h3 class="product-title">
+                        Ladies Deodorant
+                    </h3>
+                    <div class="pxl-product-price">
+                        <h6 class="product-price-label product-label">Price:</h6>
+                        <span>$500.00</span>
+                    </div>
+                    <div class="pxl-wrap-attribute">
+                        <h6 class="product-price-label product-label">Flavour:</h6>
+                        <div class="wrap-attribute">
+                            <a class="attr-product active" href="#">Berry</a>
+                            <a class="attr-product" href="#">Bamboo</a>
+                        </div>
+                    </div>
+                    <div class="pxl-wrap-quantity">
+                        <h6 class="product-price-label product-label">Quantity:</h6>
+                        <form action="" class="pxl-form-quantity">
+                            <button class="reduce">-</button>
+                            <input class="quantity" type="number" value="1" min="0">
+                            <button class="increase">+</button>
+                        </form>
+                    </div>
+                    <div class="pxl-wrap-button">
+                        <button class="btn btn-primary">Add to Cart</button>
+                        <a class="btn btn-primary">Add to wishlist</a>
+                    </div>
+                    <div class="pxl-product-desc">Nam tempus turpis at metus scelerisque placerat nulla deumantos
+                        solicitud
+                        felis. Pellentesque diam dolor, elementum etos lobortis des mollis ut risus. Sedcus faucibus
+                        an
+                        sullamcorper mattis drostique des commodo pharetras...
+                        <b>
+                            <a href="#">View Product <i class="fa-solid fa-arrow-right-long"></i></a>
+                        </b>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="./assets/font/Awesome/js/all.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+<script src="./assets/js/script.js"></script>
+
+</html>
