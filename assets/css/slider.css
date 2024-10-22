@@ -8,6 +8,14 @@
     position: relative;
 }
 
+.pxl-slider .pxl-slider-prev {
+    left: 50px;
+}
+
+.pxl-slider .pxl-slider-next {
+    right: 50px;
+}
+
 .pxl-slider .pxl-slick-custom-nav {
     position: absolute;
     bottom: 30px;

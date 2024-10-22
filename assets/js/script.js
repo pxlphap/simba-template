@@ -118,13 +118,21 @@
             infinite: true,
             speed: 500,
             fade: true,
+            autoplay: true,
             cssEase: 'linear',
             slidesToShow: 1,
             slidesToScroll: 1,
-            arrows: false
+            arrows: true,
+            prevArrow: $('.pxl-slider-prev'),
+            nextArrow: $('.pxl-slider-next')
         });
 
-        $('.pxl-slick-nav-item').on('click', function () {
+        $slickSlider.on('init', function (event, slick) {
+            console.log('Slick initialized');
+        });
+
+        // Delegate the click event for dynamically loaded elements
+        $(document).on('click', '.pxl-slick-nav-item', function () {
             var slideIndex = $(this).data('slide');
             $slickSlider.slick('slickGoTo', slideIndex);
         });
@@ -135,7 +143,6 @@
         });
 
         $('.pxl-slick-nav-item[data-slide="0"]').addClass('active');
-
         // Product carousel
         var $productSlider = $('.pxl-product-carousel .slick-slider');
         var $productSlider2 = $('.pxl-product-carousel .main-slider');
@@ -188,6 +195,8 @@
             prevArrow: $('.pxl-slick-prev'),
             nextArrow: $('.pxl-slick-next'),
         });
+
+
         var $slickSliderProductPopup = $('.pxl-wrap-product-popup .slick-slider');
 
         $slickSliderProductPopup.slick({
