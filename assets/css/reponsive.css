@@ -269,6 +269,14 @@
     .pxl-group-team {
         grid-template-columns: repeat(1, 1fr);
     }
+
+    .pxl-slider .pxl-slider-prev {
+        left: 5px;
+    }
+
+    .pxl-slider .pxl-slider-next {
+        right: 5px;
+    }
 }
 
 @media screen and (max-width: 575px) {
@@ -347,6 +355,19 @@
 
     .contact-form-default .form-group {
         grid-column: 1 / 3;
+    }
+
+    .widget-btn-list {
+        right: 20px;
+        bottom: 40px;
+    }
+
+    .pxl-slider .pxl-slider-prev {
+        left: 5px;
+    }
+
+    .pxl-slider .pxl-slider-next {
+        right: 5px;
     }
 }
 
